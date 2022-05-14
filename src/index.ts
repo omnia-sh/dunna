@@ -1,7 +1,7 @@
 import integer from './integers';
 
-const main = {
+const dunna = {
   integer,
 };
 
-export default main;
+export default dunna;
