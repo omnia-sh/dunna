@@ -20,8 +20,16 @@ const dunna = require('dunna').default;
 
 ### integer
 
-To get an integer you can run `dunna.integer()` This will give a random integer between **0** (the min included) and **1,000,000** (the max not included)
+To generate an integer you can run `dunna.integer()` This will give a random integer between **0** (the min inclusive) and **1,000** (the max not inclusive)
 
-To customize this behavour you can pass config param to specifiy min and max like this
+To customize this behaviour you can pass config param to specifiy min and max like this
 
 `dunna.integer({min: 5, max: 150})`
+
+### float
+
+To generate a float number you can run `dunna.float()` This will generate a random float between **0** (the min inclusive) and **1,000** (the max not inclusive)
+
+To customize this behaviour you can pass config param to specifiy min and max like this
+
+`dunna.float({min: 5.6, max: 150})`
