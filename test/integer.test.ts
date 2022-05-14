@@ -7,6 +7,12 @@ describe('Test dunna.integer() function', () => {
     expect(parseInt(number.toString())).toEqual(number);
   });
 
+  it('throw error when specify float as min or max', () => {
+    expect(() => dunna.integer({ min: 5.3 })).toThrowError();
+
+    expect(() => dunna.integer({ max: 95.7 })).toThrowError();
+  });
+
   it('generate a random integer without params', () => {
     for (let i = 0; i < 1000; i++) {
       const number = dunna.integer();
