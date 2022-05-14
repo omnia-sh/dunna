@@ -7,6 +7,12 @@ describe('Test dunna.boolean() function', () => {
     expect([true, false]).toContain(boolean);
   });
 
+  it('throw error when likliehood < 0 or > 100', () => {
+    expect(() => dunna.boolean({ likelihood: -1 })).toThrowError();
+
+    expect(() => dunna.boolean({ likelihood: 101 })).toThrowError();
+  });
+
   it('return true when likelihood = 100', () => {
     for (let i = 0; i < 100; i++) {
       const boolean = dunna.boolean({ likelihood: 100 });
@@ -23,9 +29,24 @@ describe('Test dunna.boolean() function', () => {
     }
   });
 
-  it('throw error when likliehood < 0 or > 100', () => {
-    expect(() => dunna.boolean({ likelihood: -1 })).toThrowError();
+  it('return boolean based on likelihood', () => {
+    const likelihood = 25;
 
-    expect(() => dunna.boolean({ likelihood: 101 })).toThrowError();
+    const cycles = 10000;
+
+    let trues = 0;
+
+    for (let i = 0; i < cycles; i++) {
+      const boolean = dunna.boolean({ likelihood });
+
+      if (boolean) {
+        trues++;
+      }
+    }
+
+    const truePercentage = (trues / cycles) * 100;
+
+    expect(truePercentage).toBeGreaterThan(likelihood - 2.5);
+    expect(truePercentage).toBeLessThan(likelihood + 2.5);
   });
 });
