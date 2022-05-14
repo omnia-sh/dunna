@@ -3,7 +3,7 @@ interface FloatParams {
   max?: number;
 }
 
-const defaultFloatParams = {
+const defaultFloatParams: FloatParams = {
   min: 0,
   max: 1000,
 };
