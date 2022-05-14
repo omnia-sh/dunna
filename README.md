@@ -13,7 +13,7 @@ import dunna from 'dunna';
 ```js
 // Commonjs
 
-const dunna = require('dunna');
+const dunna = require('dunna').default;
 ```
 
 ## functions
