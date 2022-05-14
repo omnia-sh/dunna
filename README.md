@@ -18,9 +18,17 @@ const dunna = require('dunna').default;
 
 ## functions
 
+### boolean
+
+To generate a boolean you can run `dunna.boolean()` this will generate a random boolean (true or false) the like hood of true is 50%
+
+To customize that behaviour you can pass config param to specify the likelihood like this
+
+`dunna.boolean({likeliehood: 30})`
+
 ### integer
 
-To generate an integer you can run `dunna.integer()` This will give a random integer between **0** (the min inclusive) and **1,000** (the max not inclusive)
+To generate an integer you can run `dunna.integer()` this will generate a random integer between **0** (the min inclusive) and **1,000** (the max not inclusive)
 
 To customize this behaviour you can pass config param to specifiy min and max like this
 
@@ -28,7 +36,7 @@ To customize this behaviour you can pass config param to specifiy min and max li
 
 ### float
 
-To generate a float number you can run `dunna.float()` This will generate a random float between **0** (the min inclusive) and **1,000** (the max not inclusive)
+To generate a float number you can run `dunna.float()` this will generate a random float between **0** (the min inclusive) and **1,000** (the max not inclusive)
 
 To customize this behaviour you can pass config param to specifiy min and max like this
 
