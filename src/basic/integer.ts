@@ -1,11 +1,11 @@
 import float from './float';
 
-interface IntegerParams {
+interface IntegerConfig {
   min?: number;
   max?: number;
 }
 
-function integer({ min = 0, max = 1000 }: IntegerParams = {}): number {
+function integer({ min = 0, max = 1000 }: IntegerConfig = {}): number {
   if (!Number.isInteger(min) || !Number.isInteger(max)) {
     throw new Error('The min and max can not be float numbers.');
   }

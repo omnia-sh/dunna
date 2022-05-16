@@ -1,11 +1,11 @@
 import integer from './integer';
 import { letters } from '../utils/data';
 
-interface LetterParams {
+interface LetterConfig {
   casing?: 'upper' | 'lower' | 'any';
 }
 
-function letter({ casing = 'any' }: LetterParams = {}) {
+function letter({ casing = 'any' }: LetterConfig = {}) {
   if (casing === 'lower') {
     return letters.lower[integer({ max: 26 })];
   }
