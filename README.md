@@ -27,7 +27,7 @@ const dunna = require('dunna').default;
 - [x] float
 - [x] letter
 - [ ] symbol
-- [ ] Choice
+- [x] choice
 
 #### Person
 
