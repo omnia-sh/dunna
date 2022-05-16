@@ -18,6 +18,36 @@ const dunna = require('dunna').default;
 
 ## functions
 
+### Generators
+
+#### Basic
+
+- [x] boolean
+- [x] integer
+- [x] float
+- [x] letter
+- [ ] symbol
+
+#### Person
+
+- [ ] name
+- [ ] age
+- [ ] nationality
+- [ ] gender
+- [ ] email
+- [ ] phoneNumber
+
+#### Address
+
+- [ ] country
+- [ ] city
+- [ ] countryCode
+- [ ] flag
+- [ ] zipCode
+- [ ] longitude
+- [ ] latitude
+- [ ] timeZone
+
 ### boolean
 
 To generate a boolean you can run `dunna.boolean()` this will generate a random boolean (true or false) the like hood of true is 50%
