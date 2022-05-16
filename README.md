@@ -88,3 +88,7 @@ To customize this behaviour you can pass config param
 `dunna.letter({casing: 'any'})` the default
 `dunna.letter({casing: 'lower'})`
 `dunna.letter({casing: 'upper'})`
+
+### Choice
+
+Get a random choice by providing an array of choices `dunna.choice([1, 6, 3, 4])` this will get you one value from the array all values have the same likelihood
