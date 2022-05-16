@@ -41,3 +41,13 @@ To generate a float number you can run `dunna.float()` this will generate a rand
 To customize this behaviour you can pass config param to specifiy min and max like this
 
 `dunna.float({min: 5.6, max: 150})`
+
+### letter
+
+Generate a random letter (upper case or lower case) `dunna.letter()` this will generate a random upper or lower case letter
+
+To customize this behaviour you can pass config param
+
+`dunna.letter({casing: 'any'})` the default
+`dunna.letter({casing: 'lower'})`
+`dunna.letter({casing: 'upper'})`

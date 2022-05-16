@@ -1,0 +1,20 @@
+import integer from './integer';
+import { letters } from '../utils/data';
+
+interface LetterParams {
+  casing?: 'upper' | 'lower' | 'any';
+}
+
+function letter({ casing = 'any' }: LetterParams = {}) {
+  if (casing === 'lower') {
+    return letters.lower[integer({ max: 26 })];
+  }
+
+  if (casing === 'upper') {
+    return letters.upper[integer({ max: 26 })];
+  }
+
+  return letters.all[integer({ max: 26 * 2 })];
+}
+
+export default letter;
