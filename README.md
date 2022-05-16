@@ -48,6 +48,12 @@ const dunna = require('dunna').default;
 - [ ] latitude
 - [ ] timeZone
 
+#### Finance
+
+- [ ] currencyCode
+- [ ] currencyName
+- [ ] amount
+
 ### boolean
 
 To generate a boolean you can run `dunna.boolean()` this will generate a random boolean (true or false) the like hood of true is 50%
