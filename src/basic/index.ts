@@ -4,4 +4,4 @@ import float from './float';
 import letter from './letter';
 import choice from './choice';
 
-export { boolean, integer, float, letter, choice };
+export default { boolean, integer, float, letter, choice };
