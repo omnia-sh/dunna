@@ -30,23 +30,23 @@ describe('Test dunna.boolean() function', () => {
   });
 
   it('return boolean based on likelihood', () => {
-    const likelihood = 25;
+    for (const likelihood of [1, 10, 20, 30, 40, 50, 60, 70, 80, 90, 99]) {
+      const cycles = 10000;
 
-    const cycles = 10000;
+      let trues = 0;
 
-    let trues = 0;
+      for (let i = 0; i < cycles; i++) {
+        const boolean = dunna.boolean({ likelihood });
 
-    for (let i = 0; i < cycles; i++) {
-      const boolean = dunna.boolean({ likelihood });
-
-      if (boolean) {
-        trues++;
+        if (boolean) {
+          trues++;
+        }
       }
+
+      const truePercentage = (trues / cycles) * 100;
+
+      expect(truePercentage).toBeGreaterThan(likelihood - 2.5);
+      expect(truePercentage).toBeLessThan(likelihood + 2.5);
     }
-
-    const truePercentage = (trues / cycles) * 100;
-
-    expect(truePercentage).toBeGreaterThan(likelihood - 2.5);
-    expect(truePercentage).toBeLessThan(likelihood + 2.5);
   });
 });
