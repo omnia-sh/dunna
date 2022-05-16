@@ -1,9 +1,9 @@
-import { integer, float, boolean } from './generators';
+import { boolean, integer, float } from './generators';
 
 const dunna = {
+  boolean,
   integer,
   float,
-  boolean,
 };
 
 export default dunna;

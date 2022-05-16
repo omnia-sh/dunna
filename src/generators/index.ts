@@ -1,5 +1,5 @@
+import boolean from './boolean';
 import integer from './integer';
 import float from './float';
-import boolean from './boolean';
 
-export { integer, float, boolean };
+export { boolean, integer, float };
