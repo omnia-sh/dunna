@@ -1,4 +1,4 @@
-import basic from './basic';
+import { basic } from './functions';
 
 const dunna = {
   ...basic,
