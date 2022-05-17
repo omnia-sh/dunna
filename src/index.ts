@@ -1,7 +1,8 @@
-import { basic } from './functions';
+import { basic, location } from './functions';
 
 const dunna = {
   ...basic,
+  ...location,
 };
 
 export default dunna;

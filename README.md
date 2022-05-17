@@ -37,7 +37,7 @@ const dunna = require('dunna').default;
 - [ ] email
 - [ ] phoneNumber
 
-#### Address
+#### Location
 
 - [ ] country
 - [ ] city
@@ -54,7 +54,9 @@ const dunna = require('dunna').default;
 - [ ] currencyName
 - [ ] amount
 
-### boolean
+### Basic
+
+#### boolean
 
 To generate a boolean you can run `dunna.boolean()` this will generate a random boolean (true or false) the like hood of true is 50%
 
@@ -62,7 +64,7 @@ To customize that behaviour you can pass config param to specify the likelihood 
 
 `dunna.boolean({likeliehood: 30})`
 
-### integer
+#### integer
 
 To generate an integer you can run `dunna.integer()` this will generate a random integer between **0** (the min inclusive) and **1,000** (the max not inclusive)
 
@@ -70,7 +72,7 @@ To customize this behaviour you can pass config param to specifiy min and max li
 
 `dunna.integer({min: 5, max: 150})`
 
-### float
+#### float
 
 To generate a float number you can run `dunna.float()` this will generate a random float between **0** (the min inclusive) and **1,000** (the max not inclusive)
 
@@ -78,7 +80,7 @@ To customize this behaviour you can pass config param to specifiy min and max li
 
 `dunna.float({min: 5.6, max: 150})`
 
-### letter
+#### letter
 
 Generate a random letter (upper case or lower case) `dunna.letter()` this will generate a random upper or lower case letter
 
@@ -88,6 +90,12 @@ To customize this behaviour you can pass config param
 `dunna.letter({casing: 'lower'})`
 `dunna.letter({casing: 'upper'})`
 
-### Choice
+#### choice
 
 Get a random choice by providing an array of choices `dunna.choice([1, 6, 3, 4])` this will get you one value from the array all values have the same likelihood
+
+### Location
+
+#### country
+
+`dunna.country()` will give a random country

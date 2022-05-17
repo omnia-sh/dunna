@@ -1,3 +1,4 @@
 import basic from './basic';
+import location from './location';
 
-export { basic };
+export { basic, location };

@@ -1,4 +1,4 @@
-import dunna from '../src';
+import dunna from '../../src';
 
 describe('Test dunna.boolean() function', () => {
   it('return a boolean', () => {

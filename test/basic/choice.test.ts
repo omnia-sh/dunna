@@ -1,4 +1,4 @@
-import dunna from '../src';
+import dunna from '../../src';
 
 describe('Test dunna.choice() function', () => {
   it('return a valid number choice', () => {

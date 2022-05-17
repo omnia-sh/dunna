@@ -1,4 +1,4 @@
-import dunna from '../src';
+import dunna from '../../src';
 
 describe('Test dunna.integer() function', () => {
   it('generate a random integer without floating point', () => {
