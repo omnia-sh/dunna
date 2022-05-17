@@ -1,5 +1,5 @@
 import dunna from '../../src';
-import { letters } from '../../src/utils/data';
+import letters from '../../src/functions/basic/data/letters';
 
 describe('Test dunna.letter() function', () => {
   it('Return a letter', () => {

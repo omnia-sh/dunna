@@ -1,4 +1,4 @@
-export const letters = {
+export default {
   all: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz',
   upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
   lower: 'abcdefghijklmnopqrstuvwxyz',

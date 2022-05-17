@@ -1,8 +1,8 @@
-import data from './data';
+import { countries } from './data';
 import { basic } from '..';
 
 function country() {
-  return basic.choice(data.countries);
+  return basic.choice(countries);
 }
 
 export default country;
