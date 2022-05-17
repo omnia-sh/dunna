@@ -99,4 +99,12 @@ Get a random choice by providing an array of choices `dunna.choice([1, 6, 3, 4])
 
 #### country
 
-`dunna.country()` will give a random country
+`dunna.country()` return a random country (name, code)
+
+### countryName
+
+`dunna.countryName()` return a random country name
+
+### countryCode
+
+`dunna.countryCode()` return a random country code
