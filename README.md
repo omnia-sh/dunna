@@ -39,9 +39,10 @@ const dunna = require('dunna').default;
 
 #### Location
 
-- [ ] country
-- [ ] city
+- [x] country
+- [ ] countryName
 - [ ] countryCode
+- [ ] city
 - [ ] flag
 - [ ] zipCode
 - [ ] longitude
