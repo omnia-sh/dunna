@@ -1,4 +1,6 @@
-export default [
+import { Country } from '../../../types';
+
+const countries: Country[] = [
   {
     name: 'Japan',
     ISO2: 'JP',
@@ -46324,3 +46326,5 @@ export default [
     cities: [{ name: 'Charlotte Amalie', lng: '-64.9332', lat: '18.3419' }],
   },
 ];
+
+export default countries;
