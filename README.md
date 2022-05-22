@@ -42,11 +42,12 @@ const dunna = require('dunna').default;
 - [x] country
 - [x] countryName
 - [x] countryCode
-- [ ] city
+- [x] city
+- [x] cityName
+- [x] lng
+- [x] lat
 - [ ] flag
 - [ ] zipCode
-- [ ] longitude
-- [ ] latitude
 - [ ] timeZone
 
 #### Finance
@@ -101,10 +102,26 @@ Get a random choice by providing an array of choices `dunna.choice([1, 6, 3, 4])
 
 `dunna.country()` return a random country (name, code)
 
-### countryName
+#### countryName
 
 `dunna.countryName()` return a random country name
 
-### countryCode
+#### countryCode
 
 `dunna.countryCode()` return a random country code
+
+#### city
+
+`dunna.city()` returns a valid city
+
+#### cityName
+
+`dunna.cityName()` returns a valid city name
+
+#### lng
+
+`dunna.lng()` returns a valid longitude
+
+#### lat
+
+`dunna.lat()` returns a valid latitude
