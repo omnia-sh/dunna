@@ -1,9 +1,10 @@
 import dunna from '../../src';
+import country from '../../src/functions/location/country';
 import { countries } from '../../src/functions/location/data';
 
-describe('Test dunna.country() function', () => {
+describe('Test country functions', () => {
   it('return a valid country from the list', () => {
-    expect(countries).toContainEqual(dunna.country());
+    expect(countries).toContainEqual(country());
   });
 
   it('return a valid country code', () => {

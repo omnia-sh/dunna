@@ -1,12 +1,13 @@
 import dunna from '../../src';
+import city from '../../src/functions/location/city';
 import { countries } from '../../src/functions/location/data';
 
-describe('Test dunna.city(), dunna.cityName() functions', () => {
+describe('Test city functions', () => {
   it('returns a valid city', () => {
     // Get all cities
     const cities = countries.flatMap(country => country.cities);
 
-    expect(cities).toContain(dunna.city());
+    expect(cities).toContain(city());
   });
 
   it('returns a valid city name', () => {
