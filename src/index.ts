@@ -6,3 +6,6 @@ const dunna = {
 };
 
 export default dunna;
+
+export * from './functions/basic';
+export * from './functions/location';

@@ -4,10 +4,4 @@ import cityName from './city-name';
 import lng from './lng';
 import lat from './lat';
 
-export default {
-  countryName,
-  countryCode,
-  cityName,
-  lng,
-  lat,
-};
+export { countryName, countryCode, cityName, lng, lat };
