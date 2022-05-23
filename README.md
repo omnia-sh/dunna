@@ -2,7 +2,17 @@
 
 Dunna generates random data based on given parameters
 
-To get started install dunna and import it
+## To get started install dunna
+
+```sh
+# Using npm
+npm install dunna
+
+# Using yarn
+yarn add dunna
+```
+
+## Import dunna
 
 ```js
 // ES6
@@ -16,11 +26,9 @@ import dunna from 'dunna';
 const dunna = require('dunna').default;
 ```
 
-## functions
+## Functions
 
-### Generators
-
-#### Basic
+### Basic
 
 - [x] boolean
 - [x] integer
@@ -28,7 +36,7 @@ const dunna = require('dunna').default;
 - [x] letter
 - [x] choice
 
-#### Person
+### Person
 
 - [ ] name
 - [ ] age
@@ -37,7 +45,7 @@ const dunna = require('dunna').default;
 - [ ] email
 - [ ] phoneNumber
 
-#### Location
+### Location
 
 - [x] country
 - [x] countryName
@@ -50,7 +58,7 @@ const dunna = require('dunna').default;
 - [ ] zipCode
 - [ ] timeZone
 
-#### Finance
+### Finance
 
 - [ ] currencyCode
 - [ ] currencyName
