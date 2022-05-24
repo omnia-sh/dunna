@@ -118,10 +118,6 @@ Get a random choice by providing an array of choices `dunna.choice([1, 6, 3, 4])
 
 `dunna.countryCode()` return a random country code
 
-#### city
-
-`dunna.city()` returns a valid city
-
 #### cityName
 
 `dunna.cityName()` returns a valid city name

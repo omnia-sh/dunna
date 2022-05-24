@@ -1,8 +1,9 @@
-import { basic, location } from './functions';
+import { basic, location, finance } from './functions';
 
 const dunna = {
   ...basic,
   ...location,
+  ...finance,
 };
 
 export default dunna;
