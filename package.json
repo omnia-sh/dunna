@@ -37,11 +37,11 @@
   "size-limit": [
     {
       "path": "dist/dunna.cjs.production.min.js",
-      "limit": "10 KB"
+      "limit": "1 MB"
     },
     {
       "path": "dist/dunna.esm.js",
-      "limit": "10 KB"
+      "limit": "1 MB"
     }
   ],
   "devDependencies": {
