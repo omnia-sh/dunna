@@ -60,8 +60,8 @@ const dunna = require('dunna').default;
 
 ### Finance
 
-- [ ] currencyCode
-- [ ] currencyName
+- [x] currencyCode
+- [x] currencyName
 - [ ] amount
 
 ### Basic
@@ -120,12 +120,24 @@ Get a random choice by providing an array of choices `dunna.choice([1, 6, 3, 4])
 
 #### cityName
 
-`dunna.cityName()` returns a valid city name
+`dunna.cityName()` returns city name
 
 #### lng
 
-`dunna.lng()` returns a valid longitude
+`dunna.lng()` returns longitude
 
 #### lat
 
-`dunna.lat()` returns a valid latitude
+`dunna.lat()` returns latitude
+
+#### currencyName
+
+`dunna.currencyName()` return a currency name
+
+#### currencyName
+
+`dunna.currencyName()` return a currency name
+
+#### currencyCode
+
+`dunna.currencyCode()` return a currency code
