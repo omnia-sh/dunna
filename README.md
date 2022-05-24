@@ -39,6 +39,8 @@ const dunna = require('dunna').default;
 ### Person
 
 - [ ] name
+- [ ] firstName
+- [ ] lastName
 - [ ] age
 - [ ] nationality
 - [ ] gender
