@@ -16,6 +16,9 @@ describe('Test dunna.float() function', () => {
     }
   });
 
+  // TODO
+  it('generate a random float number with `fixed` number of decimal points');
+
   it('generate a random float with specified min', () => {
     for (let i = 0; i < 1000; i++) {
       const number = dunna.float({ min: 5.5 });
