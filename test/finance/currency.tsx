@@ -5,4 +5,10 @@ describe('Test dunna.currency funnctions', () => {
   it('return a valid currency choice', () => {
     expect(currencies).toContainEqual(currency());
   });
+
+  // TODO
+  it('return a valid currency code');
+
+  // TODO
+  it('return a valid currency name');
 });
