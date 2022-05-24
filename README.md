@@ -88,7 +88,7 @@ To generate a float number you can run `dunna.float()` this will generate a rand
 
 To customize this behaviour you can pass config param to specifiy min and max like this
 
-`dunna.float({min: 5.6, max: 150})`
+`dunna.float({min: 5.6, max: 150, fixed: 2})`
 
 #### letter
 
