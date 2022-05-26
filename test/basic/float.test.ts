@@ -17,7 +17,7 @@ describe('Test dunna.float() function', () => {
   });
 
   it('generate a random float number with `fixed` number of decimal points', () => {
-    for (let i = 0; i <= 5; i++) {
+    for (let i = 1; i <= 5; i++) {
       const fixed = i;
 
       const number = dunna
