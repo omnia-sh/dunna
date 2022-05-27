@@ -20,10 +20,7 @@ describe('Test dunna.float() function', () => {
     for (let i = 1; i <= 5; i++) {
       const fixed = i;
 
-      const number = dunna
-        .float({ fixed })
-        .toString()
-        .split('.');
+      const number = dunna.float({ fixed }).toString().split('.');
 
       expect(number[1].length).toBeLessThanOrEqual(fixed);
     }
