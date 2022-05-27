@@ -38,14 +38,14 @@ const dunna = require('dunna').default;
 
 ### Person
 
-- [ ] name
-- [ ] firstName
-- [ ] lastName
-- [ ] age
-- [ ] nationality
+- [x] fullName
+- [x] firstName
+- [x] lastName
 - [ ] gender
 - [ ] email
+- [ ] age
 - [ ] phoneNumber
+- [ ] nationality
 
 ### Location
 

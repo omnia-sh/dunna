@@ -28,4 +28,8 @@ describe('Test dunna person module', () => {
   });
 
   it('return a valid fullName', () => {});
+
+  it('return a valid gender', () => {
+    expect(['male', 'female']).toContainEqual(dunna.gender());
+  });
 });
