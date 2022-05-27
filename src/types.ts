@@ -13,3 +13,9 @@ export interface Country {
     lat: string;
   }[];
 }
+
+export interface Latters {
+  all: string;
+  upper: string;
+  lower: string;
+}

@@ -1,5 +1,9 @@
-export default {
+import { Latters } from '../types';
+
+const letters: Latters = {
   all: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz',
   upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
   lower: 'abcdefghijklmnopqrstuvwxyz',
 };
+
+export default letters;
