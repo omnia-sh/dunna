@@ -1,4 +1,4 @@
-import { basic, location, finance } from './functions';
+import { basic, location, finance } from './modules';
 
 const dunna = {
   ...basic,
@@ -8,5 +8,5 @@ const dunna = {
 
 export default dunna;
 
-export * from './functions/basic';
-export * from './functions/location';
+export * from './modules/basic';
+export * from './modules/location';
