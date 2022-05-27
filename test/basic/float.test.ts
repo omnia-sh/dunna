@@ -25,7 +25,7 @@ describe('Test dunna.float() function', () => {
         .toString()
         .split('.');
 
-      expect(number[1].length).toEqual(fixed);
+      expect(number[1].length).toBeLessThanOrEqual(fixed);
     }
   });
 
