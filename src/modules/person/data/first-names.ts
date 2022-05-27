@@ -1,5 +1,5 @@
 export default {
-  male: [],
+  male: ['Alice', 'David'],
 
-  female: [],
+  female: ['Jessica', 'Sarah'],
 };

@@ -1,9 +1,10 @@
-import { basic, location, finance } from './modules';
+import { basic, location, finance, person } from './modules';
 
 const dunna = {
   ...basic,
   ...location,
   ...finance,
+  ...person,
 };
 
 export default dunna;

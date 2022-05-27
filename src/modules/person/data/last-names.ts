@@ -1,5 +1,1 @@
-export default {
-  male: [],
-
-  female: [],
-};
+export default ['Smith'];
