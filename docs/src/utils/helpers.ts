@@ -6,7 +6,7 @@ import { Module } from '@/types';
 
 const MODULES_PATH = path.join(process.cwd(), 'src/modules');
 
-function getModuleSlugs() {
+export function getModuleSlugs() {
   const slugs = glob.sync(`${MODULES_PATH}/*.mdx`);
 
   return slugs;
@@ -14,11 +14,13 @@ function getModuleSlugs() {
 
 function getModuleFromSlug(slug: string): Module {
   const source = fs.readFileSync(slug);
+  const name = slug.split('/').at(-1)?.split('.')[0] as string;
 
   const { content, data } = matter(source);
 
   return {
     content,
+    name,
     title: data.title,
   };
 }
