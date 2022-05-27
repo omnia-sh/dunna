@@ -1,23 +1,27 @@
 import dunna from '../../src';
-import { firstNames, lastNames } from '../../src/database';
+import {
+  maleFirstNames,
+  femaleFirstNames,
+  lastNames,
+} from '../../src/database';
 
 describe('Test dunna person module', () => {
   it('return a valid firstName', () => {
     const firstName = dunna.firstName();
 
-    expect([...firstNames.male, ...firstNames.female]).toContain(firstName);
+    expect([...maleFirstNames, ...femaleFirstNames]).toContain(firstName);
   });
 
   it('return a valid male firstName', () => {
     const firstName = dunna.firstName({ gender: 'male' });
 
-    expect(firstNames.male).toContain(firstName);
+    expect(maleFirstNames).toContain(firstName);
   });
 
   it('return a valid female firstName', () => {
     const firstName = dunna.firstName({ gender: 'female' });
 
-    expect(firstNames.female).toContain(firstName);
+    expect(femaleFirstNames).toContain(firstName);
   });
 
   it('return a valid lastName', () => {

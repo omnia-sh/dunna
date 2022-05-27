@@ -1,4 +1,4 @@
-import { firstNames } from '../../database';
+import { maleFirstNames, femaleFirstNames } from '../../database';
 import { choice } from '../basic';
 
 interface FirstNameParams {
@@ -8,7 +8,7 @@ interface FirstNameParams {
 function firstName(params: FirstNameParams = {}): string {
   const gender = params.gender || choice(['male', 'female']);
 
-  return choice(firstNames[gender]);
+  return choice(gender === 'male' ? maleFirstNames : femaleFirstNames);
 }
 
 export default firstName;
