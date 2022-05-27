@@ -41,11 +41,9 @@ const dunna = require('dunna').default;
 - [x] fullName
 - [x] firstName
 - [x] lastName
-- [ ] gender
-- [ ] email
-- [ ] age
+- [x] gender
+- [x] email
 - [ ] phoneNumber
-- [ ] nationality
 
 ### Location
 
