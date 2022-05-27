@@ -27,9 +27,13 @@ describe('Test dunna person module', () => {
     expect(lastNames).toContain(lastName);
   });
 
+  // TODO
   it('return a valid fullName', () => {});
 
   it('return a valid gender', () => {
     expect(['male', 'female']).toContainEqual(dunna.gender());
   });
+
+  // TODO
+  it('return a valid email', () => {});
 });
