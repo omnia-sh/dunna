@@ -26,4 +26,6 @@ describe('Test dunna person module', () => {
 
     expect(lastNames).toContain(lastName);
   });
+
+  it('return a valid fullName', () => {});
 });
