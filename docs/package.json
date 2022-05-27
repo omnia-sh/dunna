@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantine/core": "^4.2.6",
+    "@mantine/hooks": "^4.2.6",
     "glob": "^8.0.3",
     "gray-matter": "^4.0.3",
     "next": "12.1.6",
