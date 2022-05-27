@@ -1,4 +1,4 @@
-import { countries } from './data';
+import { countries } from '../../database';
 import { basic } from '..';
 
 function country() {

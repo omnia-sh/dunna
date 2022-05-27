@@ -1,4 +1,4 @@
-import { lastNames } from './data';
+import { lastNames } from '../../database';
 import { choice } from '../basic';
 
 function lastName(): string {

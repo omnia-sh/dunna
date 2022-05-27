@@ -1,5 +1,5 @@
 import integer from './integer';
-import { letters } from './data';
+import { letters } from '../../database';
 
 interface LetterConfig {
   casing?: 'upper' | 'lower' | 'any';

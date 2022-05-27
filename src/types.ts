@@ -1,3 +1,8 @@
+export interface Currency {
+  code: string;
+  name: string;
+}
+
 export interface Country {
   name: string;
   ISO2: string;

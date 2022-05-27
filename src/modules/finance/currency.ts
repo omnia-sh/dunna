@@ -1,4 +1,4 @@
-import { currencies } from './data';
+import { currencies } from '../../database';
 import { choice } from '../basic';
 
 function currency() {

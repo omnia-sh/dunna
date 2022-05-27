@@ -1,6 +1,6 @@
 import dunna from '../../src';
 import country from '../../src/modules/location/country';
-import { countries } from '../../src/modules/location/data';
+import { countries } from '../../src/database';
 
 describe('Test country functions', () => {
   it('return a valid country from the list', () => {

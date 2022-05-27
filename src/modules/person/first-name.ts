@@ -1,4 +1,4 @@
-import { firstNames } from './data';
+import { firstNames } from '../../database';
 import { choice } from '../basic';
 
 interface FirstNameParams {

@@ -1,6 +1,6 @@
 import dunna from '../../src';
 import currency from '../../src/modules/finance/currency';
-import { currencies } from '../../src/modules/finance/data';
+import { currencies } from '../../src/database';
 
 describe('Test dunna.currency funnctions', () => {
   it('return a valid currency choice', () => {

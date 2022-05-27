@@ -1,6 +1,5 @@
 import dunna from '../../src';
-import firstNames from '../../src/modules/person/data/first-names';
-import lastNames from '../../src/modules/person/data/last-names';
+import { firstNames, lastNames } from '../../src/database';
 
 describe('Test dunna person module', () => {
   it('return a valid firstName', () => {
