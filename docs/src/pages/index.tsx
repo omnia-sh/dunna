@@ -1,7 +1,25 @@
-interface HomeProps {}
+import { GetStaticProps } from 'next';
+import { getAllModules } from '@/utils/helpers';
+import { Module } from '@/types';
 
-const Home = (props: HomeProps) => {
-  return <h1>Hello, World!</h1>;
+export const getStaticProps: GetStaticProps = (ctx) => {
+  const modules: Module[] = getAllModules();
+
+  return { props: { modules } };
+};
+
+interface HomeProps {
+  modules: Module[];
+}
+
+const Home = ({ modules }: HomeProps) => {
+  return (
+    <div>
+      {modules.map((module, i) => (
+        <h1 key={i}>{module.title}</h1>
+      ))}
+    </div>
+  );
 };
 
 export default Home;
