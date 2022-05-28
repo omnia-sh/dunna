@@ -6,7 +6,7 @@ import '@fontsource/roboto/700.css';
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <MantineProvider theme={theme}>
+    <MantineProvider withNormalizeCSS withGlobalStyles theme={theme}>
       <Component {...pageProps} />
     </MantineProvider>
   );

@@ -16,7 +16,7 @@ interface HomeProps {
 
 const Home = ({ docs }: HomeProps) => {
   return (
-    <Box sx={{ display: 'grid', gridTemplateColumns: '2fr 10fr' }}>
+    <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 5fr' }}>
       <TableOfContent active="/docs/basic#integer" />
 
       <Box>
