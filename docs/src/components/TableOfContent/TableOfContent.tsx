@@ -1,12 +1,12 @@
-import { Box, Text, Group, ScrollArea } from '@mantine/core';
+import { Box, ScrollArea } from '@mantine/core';
 import useStyles from './TableOfContent.styles';
+import links from './links';
 
 interface TableOfContentProps {
-  links: { label: string; link: string; order: number }[];
   active: string;
 }
 
-const TableOfContent = ({ links, active }: TableOfContentProps) => {
+const TableOfContent = ({ active }: TableOfContentProps) => {
   const { classes, cx } = useStyles();
 
   const items = links.map((item) => (
