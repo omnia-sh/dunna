@@ -18,7 +18,10 @@ const TableOfContent = ({ links, active }: TableOfContentProps) => {
       className={cx(classes.link, {
         [classes.linkActive]: active === item.link,
       })}
-      sx={(theme) => ({ paddingLeft: item.order * theme.spacing.md })}
+      sx={(theme) => ({
+        paddingLeft: item.order * theme.spacing.md,
+        fontFamily: 'Roboto',
+      })}
     >
       {item.label}
     </Box>

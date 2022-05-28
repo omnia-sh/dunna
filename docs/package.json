@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/roboto": "^4.5.7",
     "@mantine/core": "^4.2.6",
     "@mantine/hooks": "^4.2.6",
     "@mantine/prism": "^4.2.6",
