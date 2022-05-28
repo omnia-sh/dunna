@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next';
 import { getAllDocs } from '@/utils';
 import { Doc } from '@/types';
-import { Anchor, Container, Title } from '@mantine/core';
+import { Anchor, Container } from '@mantine/core';
 
 export const getStaticProps: GetStaticProps = (ctx) => {
   const docs = getAllDocs();

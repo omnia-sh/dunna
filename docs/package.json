@@ -16,7 +16,10 @@
     "gray-matter": "^4.0.3",
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-markdown": "^8.0.3",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-slug": "^5.0.1"
   },
   "devDependencies": {
     "@types/glob": "^7.2.0",
