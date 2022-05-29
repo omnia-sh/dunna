@@ -29,7 +29,7 @@ const TableOfContent = ({ active }: TableOfContentProps) => {
   ));
 
   return (
-    <Box sx={{ position: 'sticky', top: 0, left: 0 }}>
+    <Box className={classes.root}>
       <ScrollArea sx={{ height: '100vh' }}>{items}</ScrollArea>
     </Box>
   );

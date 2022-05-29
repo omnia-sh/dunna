@@ -1,4 +1,4 @@
-import { GetStaticProps } from 'next';
+import type { GetStaticProps } from 'next';
 import { Anchor, Box } from '@mantine/core';
 import { TableOfContent } from '@/components';
 import { getAllDocs } from '@/utils';
@@ -17,7 +17,7 @@ interface HomeProps {
 const Home = ({ docs }: HomeProps) => {
   return (
     <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 5fr' }}>
-      <TableOfContent active="/docs/basic#integer" />
+      <TableOfContent active="" />
 
       <Box>
         {docs.map((doc, i) => (

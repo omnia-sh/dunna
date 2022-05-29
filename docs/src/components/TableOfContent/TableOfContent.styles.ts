@@ -1,6 +1,14 @@
 import { createStyles } from '@mantine/core';
 
 const useStyles = createStyles((theme) => ({
+  root: {
+    position: 'sticky',
+    top: 0,
+    left: 0,
+    borderRight: `1px solid ${theme.colors.gray[4]}`,
+    marginRight: theme.spacing.md,
+  },
+
   link: {
     ...theme.fn.focusStyles(),
     display: 'block',

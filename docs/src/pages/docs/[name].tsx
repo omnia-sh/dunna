@@ -13,6 +13,7 @@ import {
 } from '@/utils';
 import type { Doc } from '@/types';
 import { TableOfContent } from '@/components';
+import { useRouter } from 'next/router';
 
 export const getStaticPaths: GetStaticPaths = (ctx) => {
   return {
@@ -37,9 +38,11 @@ interface DocPageProps {
 }
 
 const DocPage = ({ doc }: DocPageProps) => {
+  const { asPath } = useRouter();
+
   return (
     <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 5fr' }}>
-      <TableOfContent active={doc.name} />
+      <TableOfContent active={asPath} />
 
       <Box>
         <Title>{doc.title}</Title>
