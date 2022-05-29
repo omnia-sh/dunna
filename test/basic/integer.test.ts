@@ -18,7 +18,7 @@ describe('Test dunna.integer() function', () => {
       const number = dunna.integer();
 
       expect(number).toBeGreaterThanOrEqual(0);
-      expect(number).toBeLessThan(1000);
+      expect(number).toBeLessThan(10);
     }
   });
 
@@ -27,7 +27,7 @@ describe('Test dunna.integer() function', () => {
       const number = dunna.integer({ min: 5 });
 
       expect(number).toBeGreaterThanOrEqual(5);
-      expect(number).toBeLessThan(1000);
+      expect(number).toBeLessThan(10);
     }
   });
 
