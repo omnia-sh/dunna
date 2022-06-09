@@ -66,6 +66,11 @@ const dunna = require('dunna').default;
 - [x] currencyCode
 - [x] currencyName
 
+### Color
+
+- [ ] color
+- [ ] hex
+
 ### Basic
 
 #### boolean
