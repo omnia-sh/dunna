@@ -1,6 +1,7 @@
 import { choice } from '../basic';
+import type { Gender } from '../../types';
 
-function gender() {
+function gender(): Gender {
   return choice(['male', 'female']);
 }
 

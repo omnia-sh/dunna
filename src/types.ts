@@ -21,3 +21,10 @@ export interface Latters {
 }
 
 export type Gender = 'male' | 'female';
+
+export interface Person {
+  firstName: string;
+  lastName: string;
+  email: string;
+  gender: Gender;
+}
