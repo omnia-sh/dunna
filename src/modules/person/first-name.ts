@@ -1,8 +1,9 @@
-import { maleFirstNames, femaleFirstNames } from '../../database';
 import { choice } from '../basic';
+import type { Gender } from '../../types';
+import { maleFirstNames, femaleFirstNames } from '../../database';
 
 interface FirstNameParams {
-  gender?: 'male' | 'female';
+  gender?: Gender;
 }
 
 function firstName(params: FirstNameParams = {}): string {

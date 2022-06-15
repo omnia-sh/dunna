@@ -19,3 +19,5 @@ export interface Latters {
   upper: string;
   lower: string;
 }
+
+export type Gender = 'male' | 'female';

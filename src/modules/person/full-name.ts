@@ -1,9 +1,10 @@
-import { choice } from '../basic';
 import firstName from './first-name';
 import lastName from './last-name';
+import { choice } from '../basic';
+import type { Gender } from '../../types';
 
 interface NameParams {
-  gender?: 'male' | 'female';
+  gender?: Gender;
 }
 
 function name(params: NameParams = {}) {
