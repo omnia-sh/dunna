@@ -6,7 +6,7 @@ interface EmailParams {
 }
 
 function email({ domain }: EmailParams) {
-  return `${firstName()}_${lastName()}@${domain}`;
+  return `${firstName().toLowerCase()}_${lastName().toLocaleLowerCase()}@${domain}`;
 }
 
 export default email;
