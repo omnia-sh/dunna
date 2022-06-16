@@ -5,7 +5,7 @@ interface EmailParams {
   domain?: string;
 }
 
-function email({ domain = 'example.com' }: EmailParams) {
+function email({ domain = 'example.com' }: EmailParams = {}) {
   return `${firstName().toLowerCase()}_${lastName().toLocaleLowerCase()}@${domain}`;
 }
 
