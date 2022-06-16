@@ -19,7 +19,7 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "format": "prettier --write .",
-    "docs": "cd docs && npm run dev"
+    "docs": "cd docs && npm run start"
   },
   "peerDependencies": {},
   "husky": {
