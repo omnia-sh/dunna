@@ -44,3 +44,7 @@ dunna.firstName({ gender: 'female' });
 // Get a random city name
 dunna.cityName();
 ```
+
+### Support
+
+If you want to support this project you can do so by giving a star or tweeting about us
