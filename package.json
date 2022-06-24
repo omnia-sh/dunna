@@ -20,10 +20,10 @@
     "analyze": "size-limit --why",
     "format": "prettier --write .",
     "typecheck": "tsc --noEmit",
-    "docs": "cd docs && npm run start",
-    "docs:build": "cd docs && npm run build",
-    "docs:serve": "cd docs && npm run serve",
-    "docs:typecheck": "cd docs && npm run typecheck"
+    "docs": "cd docs && yarn && yarn start",
+    "docs:build": "cd docs && yarn build",
+    "docs:serve": "cd docs && yarn serve",
+    "docs:typecheck": "cd docs && yarn typecheck"
   },
   "peerDependencies": {},
   "husky": {
