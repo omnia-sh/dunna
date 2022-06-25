@@ -66,7 +66,6 @@ const Generator = ({ data, onClick }: GeneratorProps) => {
       </table>
 
       <Button
-        mt="md"
         sx={{ width }}
         onClick={() => {
           const { text, color } = onClick(_dunna, state);
