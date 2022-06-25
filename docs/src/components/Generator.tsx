@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   Button,
-  MantineColor,
+  MantineTheme,
   NumberInput,
   useMantineTheme,
 } from '@mantine/core';
@@ -20,8 +20,9 @@ interface GeneratorProps {
 
   onClick: (
     dunna: typeof _dunna,
-    state: any
-  ) => { text: string; color: MantineColor };
+    state: any,
+    theme: MantineTheme
+  ) => { text: string; styles: React.CSSProperties };
 }
 
 const Generator = ({ data, onClick }: GeneratorProps) => {
@@ -68,11 +69,11 @@ const Generator = ({ data, onClick }: GeneratorProps) => {
       <Button
         sx={{ width }}
         onClick={() => {
-          const { text, color } = onClick(_dunna, state);
+          const { text, styles } = onClick(_dunna, state, theme);
 
           toast(text, {
             position: 'bottom-right',
-            style: { width: '200px', backgroundColor: theme.colors[color][6] },
+            style: { width: '200px', ...styles },
           });
         }}
       >

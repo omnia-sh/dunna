@@ -29,11 +29,14 @@ dunna.boolean({ likelihood: 20 }); // The output has chance of 20% to be true
       initialValue: 50,
     },
   ]}
-  onClick={(dunna, state) => {
+  onClick={(dunna, state, theme) => {
     const bool = dunna.boolean({ likelihood: state.likelihood });
     const text = bool.toString();
-    const color = bool ? 'green' : 'red';
-    return { text, color };
+    const styles = {
+      backgroundColor: bool ? theme.colors.green[6] : theme.colors.red[6],
+      color: theme.white,
+    };
+    return { text, styles };
   }}
 />
 
