@@ -24,6 +24,23 @@ dunna.boolean({ likelihood: 20 }); // The output has chance of 20% to be true
 | ---------- | ------ | ------- | --------------------------------- |
 | likelihood | number | 50      | The likelihood of true occurrence |
 
+<Generator
+  data={[
+    {
+      name: 'likelihood',
+      description: 'The likelihood of true occurrence',
+      type: 'number',
+      initialValue: 50,
+    },
+  ]}
+  onClick={(dunna, state) => {
+    const bool = dunna.boolean({ likelihood: state.likelihood });
+    const text = bool.toString();
+    const color = bool ? 'green' : 'red';
+    return { text, color };
+  }}
+/>
+
 ## Integer
 
 `dunna.integer()` returns a random integer between 0 (inclusive) and 10 (bot inclusive)
