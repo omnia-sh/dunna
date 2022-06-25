@@ -34,7 +34,6 @@ dunna.boolean({ likelihood: 20 }); // The output has chance of 20% to be true
     const text = bool.toString();
     const styles = {
       backgroundColor: bool ? theme.colors.green[6] : theme.colors.red[6],
-      color: theme.white,
     };
     return { text, styles };
   }}
@@ -54,10 +53,27 @@ dunna.integer({ min: 1, max: 100 });
 dunna.integer({ min: -10, max: 10 });
 ```
 
-| Name | Type   | Default | Description                      |
-| ---- | ------ | ------- | -------------------------------- |
-| min  | number | 0       | The min number (`inclusive`)     |
-| max  | number | 10      | The max number (`not inclusive`) |
+<Generator
+  data={[
+    {
+      name: 'min',
+      description: 'The minimum number `inclusive`',
+      type: 'number',
+      initialValue: 0,
+    },
+    {
+      name: 'max',
+      description: 'The maximum number `not inclusive`',
+      type: 'number',
+      initialValue: 10,
+    },
+  ]}
+  onClick={(dunna, state, theme) => {
+    const integer = dunna.integer({ min: state.min, max: state.max });
+    const text = integer.toString();
+    return { text };
+  }}
+/>
 
 ## Float
 
@@ -71,11 +87,37 @@ dunna.float(); // 8.834
 dunna.float({ min: 3, max: 36, fixed: 5 });
 ```
 
-| Name  | Type   | Default | Description                              |
-| ----- | ------ | ------- | ---------------------------------------- |
-| min   | number | 0       | The min number (`inclusive`)             |
-| max   | number | 10      | The max number (`not inclusive`)         |
-| fixed | number | 3       | count of digits after the floating point |
+<Generator
+  data={[
+    {
+      name: 'min',
+      description: 'The minimum number `inclusive`',
+      type: 'number',
+      initialValue: 0,
+    },
+    {
+      name: 'max',
+      description: 'The maximum number `not inclusive`',
+      type: 'number',
+      initialValue: 10,
+    },
+    {
+      name: 'fixed',
+      description: 'count of digits after the floating point`',
+      type: 'number',
+      initialValue: 3,
+    },
+  ]}
+  onClick={(dunna, state, theme) => {
+    const float = dunna.float({
+      min: state.min,
+      max: state.max,
+      fixed: state.fixed,
+    });
+    const text = float.toString();
+    return { text };
+  }}
+/>
 
 ## Letter
 
@@ -92,6 +134,28 @@ dunna.letter({ casing: 'upper' });
 | Name   | Type                  | Default | Description                      |
 | ------ | --------------------- | ------- | -------------------------------- |
 | casing | upper \| lower \| any | any     | Specify the casing of the letter |
+
+<Generator
+  data={[
+    {
+      name: 'casing',
+      description: 'Specify the casing of the letter',
+      type: 'enum',
+      initialValue: 'any',
+      values: ['any', 'upper', 'lower'],
+    },
+  ]}
+  onClick={(dunna, state, theme) => {
+    const text = dunna.letter({ casing: state.casing });
+    const styles = {
+      backgroundColor:
+        text === text.toUpperCase()
+          ? theme.colors.blue[8]
+          : theme.colors.blue[4],
+    };
+    return { text, styles };
+  }}
+/>
 
 ## Choice
 

@@ -3,6 +3,7 @@ import {
   Button,
   MantineTheme,
   NumberInput,
+  Select,
   useMantineTheme,
 } from '@mantine/core';
 import { useElementSize, useSetState } from '@mantine/hooks';
@@ -16,6 +17,7 @@ interface GeneratorProps {
     type: 'number' | 'string' | 'enum';
 
     initialValue: number | string;
+    values: string[];
   }[];
 
   onClick: (
@@ -53,9 +55,15 @@ const Generator = ({ data, onClick }: GeneratorProps) => {
             <tr key={i}>
               <td>{item.name}</td>
               <td>
-                {item.type === 'number' && (
+                {item.type === 'number' ? (
                   <NumberInput
                     value={state[item.name]}
+                    onChange={(value) => setState({ [item.name]: value })}
+                  />
+                ) : (
+                  <Select
+                    data={item.values}
+                    value={item.initialValue as string}
                     onChange={(value) => setState({ [item.name]: value })}
                   />
                 )}
@@ -73,7 +81,12 @@ const Generator = ({ data, onClick }: GeneratorProps) => {
 
           toast(text, {
             position: 'bottom-right',
-            style: { width: '200px', ...styles },
+            style: {
+              width: '200px',
+              backgroundColor: theme.colors.blue[6],
+              color: theme.white,
+              ...styles,
+            },
           });
         }}
       >
