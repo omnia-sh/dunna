@@ -39,6 +39,8 @@ const Generator = ({ data, onClick }: GeneratorProps) => {
 
   const [state, setState] = useSetState(_state);
 
+  console.log(state);
+
   return (
     <div style={{ display: 'grid' }}>
       <table>
@@ -63,7 +65,7 @@ const Generator = ({ data, onClick }: GeneratorProps) => {
                 ) : (
                   <Select
                     data={item.values}
-                    value={item.initialValue as string}
+                    value={state[item.name] as string}
                     onChange={(value) => setState({ [item.name]: value })}
                   />
                 )}
