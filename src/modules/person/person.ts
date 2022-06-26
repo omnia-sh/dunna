@@ -1,22 +1,26 @@
 import genderFn from './gender';
 import firstNameFn from './first-name';
 import lastNameFn from './last-name';
-import type { Person } from '../../types';
+import type { Gender, Person } from '../../types';
 
 interface PersonParams {
   domain?: string;
+  gender?: Gender | 'any';
 }
 
-function person({ domain = 'example.com' }: PersonParams = {}): Person {
-  const gender = genderFn();
-  const firstName = firstNameFn({ gender });
-  const lastName = lastNameFn();
-  const email = `${firstName.toLowerCase()}_${lastName.toLowerCase()}@${domain}`;
+function person({
+  gender = 'any',
+  domain = 'example.com',
+}: PersonParams = {}): Person {
+  const _firstName = firstNameFn({ gender });
+  const _lastName = lastNameFn();
+  const email = `${_firstName.toLowerCase()}_${_lastName.toLowerCase()}@${domain}`;
+  const _gender = gender === 'any' ? genderFn() : gender;
 
   return {
-    gender,
-    firstName,
-    lastName,
+    gender: _gender,
+    firstName: _firstName,
+    lastName: _lastName,
     email,
   };
 }

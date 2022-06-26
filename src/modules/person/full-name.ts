@@ -1,15 +1,12 @@
 import firstName from './first-name';
 import lastName from './last-name';
-import { choice } from '../basic';
 import type { Gender } from '../../types';
 
 interface NameParams {
-  gender?: Gender;
+  gender?: Gender | 'any';
 }
 
-function name(params: NameParams = {}) {
-  const gender = params.gender || choice(['male', 'female']);
-
+function name({ gender }: NameParams = {}) {
   return `${firstName({ gender })} ${lastName()}`;
 }
 

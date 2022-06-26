@@ -3,13 +3,19 @@ import type { Gender } from '../../types';
 import { maleFirstNames, femaleFirstNames } from '../../database';
 
 interface FirstNameParams {
-  gender?: Gender;
+  gender?: Gender | 'any';
 }
 
-function firstName(params: FirstNameParams = {}): string {
-  const gender = params.gender || choice(['male', 'female']);
+function firstName({ gender = 'any' }: FirstNameParams = {}): string {
+  if (gender === 'male') {
+    return choice(maleFirstNames);
+  }
 
-  return choice(gender === 'male' ? maleFirstNames : femaleFirstNames);
+  if (gender === 'female') {
+    return choice(femaleFirstNames);
+  }
+
+  return choice(choice([maleFirstNames, femaleFirstNames]));
 }
 
 export default firstName;
