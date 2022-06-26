@@ -12,15 +12,15 @@ function person({
   gender = 'any',
   domain = 'example.com',
 }: PersonParams = {}): Person {
-  const _firstName = firstNameFn({ gender });
-  const _lastName = lastNameFn();
-  const email = `${_firstName.toLowerCase()}_${_lastName.toLowerCase()}@${domain}`;
-  const _gender = gender === 'any' ? genderFn() : gender;
+  const booleanGender = gender === 'any' ? genderFn() : gender;
+  const firstName = firstNameFn({ gender: booleanGender });
+  const lastName = lastNameFn();
+  const email = `${firstName.toLowerCase()}_${lastName.toLowerCase()}@${domain}`;
 
   return {
-    gender: _gender,
-    firstName: _firstName,
-    lastName: _lastName,
+    gender: booleanGender,
+    firstName,
+    lastName,
     email,
   };
 }

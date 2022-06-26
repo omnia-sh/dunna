@@ -1,6 +1,6 @@
 import { choice } from '../basic';
-import type { Gender } from '../../types';
 import { maleFirstNames, femaleFirstNames } from '../../database';
+import type { Gender } from '../../types';
 
 interface FirstNameParams {
   gender?: Gender | 'any';

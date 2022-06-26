@@ -1,5 +1,5 @@
-import firstName from './first-name';
-import lastName from './last-name';
+import firstNameFn from './first-name';
+import lastNameFn from './last-name';
 import type { Gender } from '../../types';
 
 interface EmailParams {
@@ -8,10 +8,10 @@ interface EmailParams {
 }
 
 function email({ domain = 'example.com', gender = 'any' }: EmailParams = {}) {
-  const fName = firstName({ gender });
-  const lname = lastName();
+  const firstName = firstNameFn({ gender });
+  const lastName = lastNameFn();
 
-  return `${fName.toLowerCase()}_${lname.toLowerCase()}@${domain}`;
+  return `${firstName.toLowerCase()}_${lastName.toLowerCase()}@${domain}`;
 }
 
 export default email;
