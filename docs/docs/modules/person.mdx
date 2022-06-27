@@ -39,8 +39,7 @@ dunna.firstName({ gender: 'male' });
   ]}
   onClick={(dunna, state, theme) => {
     const text = dunna.firstName({ gender: state.gender });
-    const styles = { backgroundColor: theme.colors.blue[6] };
-    return { text, styles };
+    return { text, styles: {} };
   }}
 />
 
@@ -56,8 +55,7 @@ dunna.lastName(); // Miller
 <Generator
   onClick={(dunna, state, theme) => {
     const text = dunna.lastName();
-    const styles = { backgroundColor: theme.colors.blue[6] };
-    return { text, styles };
+    return { text, styles: {} };
   }}
 />
 
@@ -86,8 +84,7 @@ dunna.fullName({ gender: 'female' }); // Return a random female full name
   ]}
   onClick={(dunna, state, theme) => {
     const text = dunna.fullName({ gender: state.gender });
-    const styles = { backgroundColor: theme.colors.blue[6] };
-    return { text, styles };
+    return { text, styles: {} };
   }}
 />
 
@@ -121,7 +118,7 @@ dunna.email({ gender: 'male' }); // Return a male email
   ]}
   onClick={(dunna, state, theme) => {
     const text = dunna.email({ gender: state.gender, domain: state.domain });
-    const styles = { backgroundColor: theme.colors.blue[6], width: '300px' };
+    const styles = { width: '300px' };
     return { text, styles };
   }}
 />
