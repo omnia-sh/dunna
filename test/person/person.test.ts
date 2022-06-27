@@ -41,5 +41,5 @@ describe('Test dunna person module', () => {
   it('return a valid email', () => {});
 
   // TODO
-  it('return a valid person');
+  it('return a valid person', () => {});
 });
