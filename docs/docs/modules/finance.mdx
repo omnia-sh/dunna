@@ -13,6 +13,13 @@ sidebar_position: 4
 dunna.currencyName();
 ```
 
+<Generator
+  onClick={(dunna, state, theme) => {
+    const currencyName = dunna.currencyName();
+    return { text: currencyName, styles: {} };
+  }}
+/>
+
 ## Currency Code
 
 `dunna.currencyCode()` returns a random currency code
@@ -20,6 +27,13 @@ dunna.currencyName();
 ```js
 dunna.currencyCode();
 ```
+
+<Generator
+  onClick={(dunna, state, theme) => {
+    const currencyCode = dunna.currencyCode();
+    return { text: currencyCode, styles: {} };
+  }}
+/>
 
 ## Currency
 
