@@ -80,7 +80,7 @@ const config = {
 
         links: [],
 
-        copyright: `Copyright © ${new Date().getFullYear()} Dunna`,
+        copyright: `Copyright © ${new Date().getFullYear()} Dunna (MIT Licensed)`,
       },
       prism: {
         theme: lightCodeTheme,
