@@ -47,4 +47,6 @@ dunna.cityName();
 
 ### Support
 
-If you want to support this project you can do so by giving a star or tweeting about us
+If you want to support this project you can do so by giving us a star or tweeting about us.
+
+And if you want to contribute to dunna please check the [contribution guide.](https://github.com/alimehasin/dunna/blob/main/CONTRIBUTING.md)
