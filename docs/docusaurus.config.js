@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Dunna',
-  tagline: 'Generate a random data joyfully',
+  tagline: 'Generate random data joyfully',
   url: 'https://dunna.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
