@@ -40,8 +40,6 @@ const Generator = ({ data = [], onClick }: GeneratorProps) => {
 
   const [state, setState] = useSetState(_state);
 
-  console.log(state);
-
   return (
     <div style={{ display: 'grid' }}>
       {data.length > 0 && (
