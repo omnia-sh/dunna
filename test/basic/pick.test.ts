@@ -1,4 +1,4 @@
-import dunna from '../../';
+import dunna from '../../src';
 
 describe('Test dunna.pick() function', () => {
   it('check if all elements are contained from the array', () => {
@@ -13,8 +13,8 @@ describe('Test dunna.pick() function', () => {
     }
   });
 
-  it('throw error when count is less or equal 0', () => {
-    expect(() => dunna.pick(0, [1, 2, 3])).toThrowError();
+  it('throw error when count is less than 0', () => {
+    expect(() => dunna.pick(-1, [1, 2, 3])).toThrowError();
   });
 
   it('throw error when count is bigger than the array length', () => {
