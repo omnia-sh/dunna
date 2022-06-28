@@ -3,6 +3,17 @@
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "homepage": "https://dunna.vercel.app/",
+  "keywords": [
+    "random",
+    "fake",
+    "data",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alimehasin/dunna"
+  },
   "files": [
     "dist",
     "src"
