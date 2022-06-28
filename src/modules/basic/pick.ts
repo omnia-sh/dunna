@@ -1,12 +1,11 @@
 import integer from './integer';
+import assert from 'assert';
 
 function pick<T>(count: number, array: T[]) {
+  assert(count >= 0 && count <= array.length);
+
   if (array.length === count) {
     return array;
-  }
-
-  if (count <= 0 || count > array.length) {
-    throw new Error('count should be > 0 and < array length');
   }
 
   if (array.length === 0) {
@@ -18,17 +17,14 @@ function pick<T>(count: number, array: T[]) {
   }
 
   let picks: T[] = [];
-  let indices = new Set<number>();
+  let indicies = new Set<number>();
 
-  let randomIndex;
+  while (indicies.size < count) {
+    const index = integer({ max: array.length });
 
-  while (randomIndex === undefined || indices.size !== count) {
-    randomIndex = integer({ max: array.length });
-
-    indices.add(randomIndex);
-
-    if (indices.has(randomIndex)) {
-      picks.push(array[randomIndex]);
+    if (!indicies.has(index)) {
+      indicies.add(index);
+      picks.push(array[index]);
     }
   }
 
