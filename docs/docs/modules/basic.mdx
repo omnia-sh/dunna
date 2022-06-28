@@ -161,3 +161,12 @@ dunna.letter({ casing: 'upper' });
 dunna.choice(['Alice', 'Bob', 'Charlie']); // Alice
 dunna.choice(['Alice', 'Bob', 'Charlie']); // Charlie
 ```
+
+## Pick
+
+`dunna.pick(count, array)` returns a random subset of the given array with the given count
+
+```js
+dunna.pick(3, [2, 1, 6, 3, 4]); // [6, 4, 1]
+dunna.pick(2, ['Alice', 'Bob', 'Charlie']); // ['Bob', 'Charlie']
+```
