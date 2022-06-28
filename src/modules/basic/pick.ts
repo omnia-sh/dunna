@@ -1,5 +1,9 @@
-function pick<T>(array: T[], count: number) {
-  if (array.length === count) return array;
+import integer from './integer';
+
+function pick<T>(count: number, array: T[]) {
+  if (array.length === count) {
+    return array;
+  }
 
   if (count <= 0 || count > array.length) {
     throw new Error('count should be > 0 and < array length');
@@ -14,18 +18,18 @@ function pick<T>(array: T[], count: number) {
   }
 
   let picks: T[] = [];
-  let indices: number[] = [];
+  let indices = new Set<number>();
 
-  for (let i = 0; i < count; i++) {
-    let randomIndex;
+  let randomIndex;
 
-    while (randomIndex === undefined || indices.includes(randomIndex)) {
-      randomIndex = Math.floor(Math.random() * array.length);
+  while (randomIndex === undefined || indices.size !== count) {
+    randomIndex = integer({ max: array.length });
+
+    indices.add(randomIndex);
+
+    if (indices.has(randomIndex)) {
+      picks.push(array[randomIndex]);
     }
-
-    indices.push(randomIndex);
-
-    picks.push(array[randomIndex]);
   }
 
   return picks;
