@@ -1,6 +1,6 @@
 import integer from './integer';
 
-function pick<T>(count: number, array: T[]) {
+function pick<T>(count: number, array: T[]): T[] {
   if (count < 0 || count > array.length) {
     throw new Error('Count should be >= 0 and <= array.length');
   }
