@@ -170,3 +170,12 @@ dunna.choice(['Alice', 'Bob', 'Charlie']); // Charlie
 dunna.pick(3, [2, 1, 6, 3, 4]); // [6, 4, 1]
 dunna.pick(2, ['Alice', 'Bob', 'Charlie']); // ['Bob', 'Charlie']
 ```
+
+## Omit
+
+`dunna.omit(count, array)` returns a random subset of the given array by omitting elements based on the given count
+
+```js
+dunna.omit(2, [2, 1, 6, 3, 4]); // [1, 6 ,4]
+dunna.omit(2, ['Alice', 'Bob', 'Charlie']); // ['Bob']
+```
