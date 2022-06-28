@@ -21,10 +21,6 @@ describe('Test dunna.pick() function', () => {
     expect(() => dunna.pick(10, [1, 2, 3])).toThrowError();
   });
 
-  it('throw error when array is empty', () => {
-    expect(() => dunna.pick(5, [])).toThrowError();
-  });
-
   it('throw error when count type is float', () => {
     expect(() => dunna.pick(5.2, [1, 2, 3])).toThrowError();
   });

@@ -1,15 +1,11 @@
-import integer from './integer';
 import assert from 'assert';
+import integer from './integer';
 
 function pick<T>(count: number, array: T[]) {
   assert(count >= 0 && count <= array.length);
 
   if (array.length === count) {
     return array;
-  }
-
-  if (array.length === 0) {
-    throw new Error('array should have at least one element');
   }
 
   if (!Number.isInteger(count)) {
