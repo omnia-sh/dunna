@@ -1,6 +1,3 @@
-import type {  Color } from '../types';
-
-
 const colors = [
     {name:'aliceBlue',hex:'#f0f8ff'},
 	{name:'antiqueWhite',hex:'#faebd7'},
