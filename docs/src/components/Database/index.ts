@@ -1,3 +1,4 @@
 import Names from './Names';
+import Currencies from './Currencies';
 
-export { Names };
+export default { Names, Currencies };
