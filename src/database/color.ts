@@ -1,7 +1,7 @@
 import type {  Color } from '../types';
 
 
-const colors: Color[] = [
+const colors = [
     {name:'aliceBlue',hex:'#f0f8ff'},
 	{name:'antiqueWhite',hex:'#faebd7'},
 	{name:'aqua',hex:'#00ffff'},

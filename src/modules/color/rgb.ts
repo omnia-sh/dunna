@@ -18,4 +18,4 @@ function rgb():RGB {
 }
 
 
-export default rgb;
+export  { rgb,hexToRgb };

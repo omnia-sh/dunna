@@ -32,6 +32,7 @@ export interface Person {
 export interface Color {
   name: string;
   hex: string;
+  rgb: RGB;
 }
 
 export interface RGB {
