@@ -1,6 +1,6 @@
-import _ from 'lodash';
 import React, { useEffect, useState } from 'react';
 import { Container, Paper, SegmentedControl, Table } from '@mantine/core';
+import { chunk } from '@site/utils';
 import {
   maleFirstNames,
   femaleFirstNames,
@@ -21,7 +21,7 @@ const Names = (props: NamesProps) => {
         ? femaleFirstNames
         : lastNames;
 
-    setNames(_.chunk(list, 7));
+    setNames(chunk(list, 7));
   }, [section]);
 
   return (
