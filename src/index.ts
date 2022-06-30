@@ -1,4 +1,4 @@
-import { basic, location, finance, person , color } from './modules';
+import { basic, location, finance, person, color } from './modules';
 
 const dunna = {
   ...basic,
