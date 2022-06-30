@@ -1,0 +1,69 @@
+---
+title: Color
+sidebar_position: 5
+---
+
+# Color
+
+## Name
+
+`dunna.colorName()` returns a random color name
+
+```js
+dunna.colorName(); // red
+```
+
+<Generator
+  onClick={(dunna, state, theme) => {
+    const text = dunna.colorName();
+    return { text, styles: {} };
+  }}
+/>
+
+## hex color code
+
+`dunna.hex()` returns a random hex color code
+
+```js
+dunna.hex(); // #000000
+```
+
+<Generator
+  onClick={(dunna, state, theme) => {
+    const text = dunna.hex();
+    return { text, styles: { backgroundColor: text } };
+  }}
+/>
+
+## RGB
+
+`dunna.rgb()` returns a random rgb color code
+
+```js
+dunna.rgb(); // {red:255,blue:255,green:255}
+```
+
+<Generator
+  onClick={(dunna, state, theme) => {
+    const rgb = dunna.rgb();
+    const text = `${rgb.red},${rgb.green},${rgb.blue}`;
+    return { text, styles: {} };
+  }}
+/>
+
+## Color Object
+
+`dunna.color()` returns a random color object contian name,hex and rgb
+
+```js
+dunna.color(); // { name: 'white', hex: '#ffffff' , rgb:{red:255,blue:255,green:255} }
+```
+
+<Generator
+  onClick={(dunna, state, theme) => {
+    const object = dunna.color();
+    const rgb = object.rgb;
+    const text = `${object.name} | ${object.hex} | ${rgb.red},${rgb.green},${rgb.blue}`;
+    return { text, styles: { backgroundColor: object.hex } };
+  }}
+/>
