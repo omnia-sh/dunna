@@ -1,6 +1,5 @@
 import dunna from '../../src';
-import colors from '../../src/database/color';
-import { hexToRgb } from '../../src/modules/color/rgb';
+import { hexToRgb } from '../../src/utils';
 
 describe('Test dunna color module', () => {
   it('return a valid hex color', () => {
