@@ -28,3 +28,15 @@ export interface Person {
   email: string;
   gender: Gender;
 }
+
+export interface Color {
+  name: string;
+  hex: string;
+  rgb: RGB;
+}
+
+export interface RGB {
+  red: number;
+  green: number;
+  blue: number;
+}
