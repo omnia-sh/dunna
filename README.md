@@ -6,7 +6,7 @@ Dunna generates random data based on given parameters
 
 ### Installation
 
-```
+```sh
 # Using npm
 npm install dunna
 ```
