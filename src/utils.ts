@@ -15,3 +15,9 @@ export function hexToRgb(hex: string): RGB {
     blue,
   };
 }
+
+export function hexToRgbString(hex: string): string {
+  const rgb = hexToRgb(hex);
+
+  return `rgb(${rgb.red}, ${rgb.green}, ${rgb.green})`;
+}

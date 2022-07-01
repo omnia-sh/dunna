@@ -16,7 +16,10 @@ dunna.colorName(); // red
 <Generator
   onClick={(dunna, state, theme) => {
     const text = dunna.colorName();
-    return { text, styles: {} };
+    return {
+      text,
+      styles: { backgroundColor: text },
+    };
   }}
 />
 
@@ -25,7 +28,7 @@ dunna.colorName(); // red
 `dunna.hex()` returns a random hex color code
 
 ```js
-dunna.hex(); // #000000
+dunna.hex(); // #b8860b
 ```
 
 <Generator
@@ -46,7 +49,7 @@ dunna.rgb(); // {red:255,blue:255,green:255}
 <Generator
   onClick={(dunna, state, theme) => {
     const rgb = dunna.rgb();
-    const text = `${rgb.red},${rgb.green},${rgb.blue}`;
+    const text = `rgb(${rgb.red}, ${rgb.green}, ${rgb.green})`;
     return { text, styles: {} };
   }}
 />

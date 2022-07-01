@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Paper, Table } from '@mantine/core';
+import { hexToRgbString } from '@site/../src/utils';
 import { colors } from '../../../../src/database';
 
 interface ColorsProps {}
@@ -13,6 +14,7 @@ const Colors = (props: ColorsProps) => {
             <tr>
               <th>Name</th>
               <th>Hex</th>
+              <th>RGB</th>
             </tr>
           </thead>
 
@@ -21,6 +23,7 @@ const Colors = (props: ColorsProps) => {
               <tr>
                 <td>{color.name}</td>
                 <td>{color.hex}</td>
+                <td>{hexToRgbString(color.hex)}</td>
               </tr>
             ))}
           </tbody>
