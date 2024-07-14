@@ -5,7 +5,8 @@
   },
 
   "files": {
-    "maxSize": 3000000
+    "maxSize": 3000000,
+    "ignore": ["node_modules", "dist"]
   },
 
   "linter": {
