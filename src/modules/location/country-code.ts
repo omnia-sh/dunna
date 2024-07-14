@@ -1,4 +1,4 @@
-import country from './country';
+import country from "./country";
 
 function countryCode() {
   return country().ISO2;

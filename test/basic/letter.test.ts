@@ -1,21 +1,22 @@
-import dunna from '../../src';
-import { letters } from '../../src/database';
+import { describe, expect, test } from "bun:test";
+import dunna from "../../src";
+import { letters } from "../../src/database";
 
-describe('Test dunna.letter() function', () => {
-  it('return a letter', () => {
-    const letter = dunna.letter();
+describe("Test dunna.basic.letter() function", () => {
+  test("return a letter", () => {
+    const letter = dunna.basic.letter();
 
     expect(letters.all).toContain(letter);
   });
 
-  it('return an upper case letter', () => {
-    const letter = dunna.letter({ casing: 'upper' });
+  test("return an upper case letter", () => {
+    const letter = dunna.basic.letter({ casing: "upper" });
 
     expect(letters.upper).toContain(letter);
   });
 
-  it('return a lower case letter', () => {
-    const letter = dunna.letter({ casing: 'lower' });
+  test("return a lower case letter", () => {
+    const letter = dunna.basic.letter({ casing: "lower" });
 
     expect(letters.lower).toContain(letter);
   });

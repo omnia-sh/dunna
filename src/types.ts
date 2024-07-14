@@ -20,7 +20,7 @@ export interface Latters {
   lower: string;
 }
 
-export type Gender = 'male' | 'female';
+export type Gender = "male" | "female";
 
 export interface Person {
   firstName: string;

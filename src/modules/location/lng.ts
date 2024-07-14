@@ -1,4 +1,4 @@
-import city from './city';
+import city from "./city";
 
 function lng() {
   return city().lng;

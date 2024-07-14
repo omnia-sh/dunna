@@ -1,39 +1,33 @@
-import dunna from '../../src';
-import city from '../../src/modules/location/city';
-import { countries } from '../../src/database';
+import { describe, expect, test } from "bun:test";
+import dunna from "../../src";
+import { countries } from "../../src/database";
+import city from "../../src/modules/location/city";
 
-describe('Test city functions', () => {
-  it('returns a valid city', () => {
+describe("Test city functions", () => {
+  test("returns a valid city", () => {
     // Get all cities
     const cities = countries.flatMap((country) => country.cities);
-
     expect(cities).toContain(city());
   });
 
-  it('returns a valid city name', () => {
+  test("returns a valid city name", () => {
     // Get all cities names
-    const citiesNames = countries.flatMap((country) =>
-      country.cities.map((city) => city.name)
-    );
+    const citiesNames = countries.flatMap((country) => country.cities.map((city) => city.name));
 
-    expect(citiesNames).toContain(dunna.cityName());
+    expect(citiesNames).toContain(dunna.location.cityName());
   });
 
-  it('returns a valid city lng', () => {
+  test("returns a valid city lng", () => {
     // Get all cities lngs
-    const citiesLngs = countries.flatMap((country) =>
-      country.cities.map((city) => city.lng)
-    );
+    const citiesLngs = countries.flatMap((country) => country.cities.map((city) => city.lng));
 
-    expect(citiesLngs).toContain(dunna.lng());
+    expect(citiesLngs).toContain(dunna.location.lng());
   });
 
-  it('returns a valid city lat', () => {
+  test("returns a valid city lat", () => {
     // Get all cities lats
-    const citiesLats = countries.flatMap((country) =>
-      country.cities.map((city) => city.lat)
-    );
+    const citiesLats = countries.flatMap((country) => country.cities.map((city) => city.lat));
 
-    expect(citiesLats).toContain(dunna.lat());
+    expect(citiesLats).toContain(dunna.location.lat());
   });
 });

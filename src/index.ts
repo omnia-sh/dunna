@@ -1,14 +1,3 @@
-import { basic, location, finance, person, color } from './modules';
-
-const dunna = {
-  ...basic,
-  ...location,
-  ...finance,
-  ...person,
-  ...color,
-};
+import * as dunna from "./modules";
 
 export default dunna;
-
-export * from './modules/basic';
-export * from './modules/location';

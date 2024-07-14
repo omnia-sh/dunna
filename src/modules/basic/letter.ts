@@ -1,16 +1,16 @@
-import integer from './integer';
-import { letters } from '../../database';
+import { letters } from "../../database";
+import integer from "./integer";
 
 interface LetterConfig {
-  casing?: 'upper' | 'lower' | 'any';
+  casing?: "upper" | "lower" | "any";
 }
 
-function letter({ casing = 'any' }: LetterConfig = {}) {
-  if (casing === 'lower') {
+function letter({ casing = "any" }: LetterConfig = {}) {
+  if (casing === "lower") {
     return letters.lower[integer({ max: 26 })];
   }
 
-  if (casing === 'upper') {
+  if (casing === "upper") {
     return letters.upper[integer({ max: 26 })];
   }
 

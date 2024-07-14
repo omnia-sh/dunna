@@ -1,5 +1,5 @@
-import { countries } from '../../database';
-import { basic } from '..';
+import { basic } from "..";
+import { countries } from "../../database";
 
 function country() {
   return basic.choice(countries);

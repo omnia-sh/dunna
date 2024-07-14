@@ -1,18 +1,12 @@
-import type { RGB } from './types';
+import type { RGB } from "./types";
 
 export function hexToRgb(hex: string): RGB {
-  if (hex.startsWith('#')) {
-    hex = hex.substring(1);
-  }
-  var bigint = parseInt(hex, 16);
-  var red = (bigint >> 16) & 255;
-  var green = (bigint >> 8) & 255;
-  var blue = bigint & 255;
+  const bigint = Number.parseInt(hex.replace("#", ""), 16);
 
   return {
-    red,
-    green,
-    blue,
+    red: (bigint >> 16) & 255,
+    green: (bigint >> 8) & 255,
+    blue: bigint & 255,
   };
 }
 

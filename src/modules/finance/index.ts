@@ -1,4 +1,4 @@
-import currencyName from './currency-name';
-import currencyCode from './currency-code';
+import currencyCode from "./currency-code";
+import currencyName from "./currency-name";
 
 export { currencyName, currencyCode };

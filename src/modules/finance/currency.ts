@@ -1,5 +1,5 @@
-import { currencies } from '../../database';
-import { choice } from '../basic';
+import { currencies } from "../../database";
+import { choice } from "../basic";
 
 function currency() {
   return choice(currencies);
