@@ -1,15 +1,17 @@
 {
   "name": "dunna",
+  "author": "Ali Mehasin",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "keywords": ["random", "fake", "data", "typescript"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/alimehasin/dunna"
+    "url": "https://github.com/alimehasin/dunna.git"
   },
-  "files": ["dist"],
   "scripts": {
     "build": "tsup",
     "format": "biome format --write",
