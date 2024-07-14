@@ -10,7 +10,7 @@
   "keywords": ["random", "fake", "data", "typescript"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/alimehasin/dunna.git"
+    "url": "git+https://github.com/alimehasin/dunna.git"
   },
   "scripts": {
     "build": "tsup",
