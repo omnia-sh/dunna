@@ -5,20 +5,18 @@
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
-
     "format": "biome format --write",
     "lint": "biome lint --write",
     "check": "biome check --write",
     "typecheck": "tsc --noEmit",
-
     "size": "size-limit",
-
     "prepare": "husky"
   },
-
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
     "@commitlint/cli": "^19.3.0",
@@ -31,11 +29,11 @@
     "tsup": "^8.1.0",
     "typescript": "^5"
   },
-
   "size-limit": [
     {
       "path": "dist/index.js",
       "limit": "1MB"
     }
-  ]
+  ],
+  "version": "0.5.0-alpha.0"
 }
