@@ -1,0 +1,121 @@
+---
+title: Basic
+description: This is a basic module
+---
+
+import { Card } from "@astrojs/starlight/components";
+
+This is a basic module, it contains integer, float, string, boolean, and date types.
+
+## Boolean
+
+`dunna.basic.boolean()` returns a random boolean value.
+
+```js
+// Use default likelihood = 50
+dunna.basic.boolean(); // true
+dunna.basic.boolean(); // false
+dunna.basic.boolean(); // false
+
+// Modify likelihood
+dunna.basic.boolean({ likelihood: 80 }); // The output has chance of 80% to be true
+dunna.basic.boolean({ likelihood: 20 }); // The output has chance of 20% to be true
+```
+
+| Parameter  | Type   | Description                             | Default |
+| ---------- | ------ | --------------------------------------- | ------- |
+| likelihood | number | The likelihood of the output being true | 50      |
+
+## Integer
+
+`dunna.basic.integer()` returns a random integer between 0 (not inclusive) and 10 (inclusive)
+
+```js
+dunna.basic.integer(); // 4
+dunna.basic.integer(); // 7
+dunna.basic.integer(); // 4
+
+// Customize parameters
+dunna.integer({ min: 1, max: 100 });
+dunna.integer({ min: -10, max: 10 });
+```
+
+| Parameter | Type   | Description                                     | Default |
+| --------- | ------ | ----------------------------------------------- | ------- |
+| min       | number | The minimum value of the output (inclusive)     | 0       |
+| max       | number | The maximum value of the output (not inclusive) | 10      |
+
+## Float
+
+`dunna.basic.float()` returns a random float number between 0 (inclusive) and 10 (not inclusive)
+
+```js
+dunna.basic.float(); // 4.364
+dunna.basic.float(); // 8.834
+
+// Parameters
+dunna.float({ min: 3, max: 36, fixed: 5 });
+```
+
+| Parameter | Type   | Description                                     | Default |
+| --------- | ------ | ----------------------------------------------- | ------- |
+| min       | number | The minimum value of the output (inclusive)     | 0       |
+| max       | number | The maximum value of the output (not inclusive) | 10      |
+| fixed     | number | The number of decimal places                    | 3       |
+
+## Letter
+
+`dunna.basic.letter()` returns a random uppercase or lowercase letter
+
+```js
+dunna.basic.letter(); // h
+dunna.basic.letter(); // E
+
+// Parameters
+dunna.basic.letter({ casing: "upper" });
+```
+
+| Parameter | Type   | Description                                       | Default |
+| --------- | ------ | ------------------------------------------------- | ------- |
+| casing    | string | The casing of the output letter (upper/lower/any) | "any"   |
+
+## Choice
+
+`dunna.basic.choice(array)` returns a random element from an array
+
+```js
+dunna.basic.choice(["Alice", "Bob", "Charlie"]); // Alice
+dunna.basic.choice(["Alice", "Bob", "Charlie"]); // Charlie
+```
+
+| Parameter | Type | Description                       | Default |
+| --------- | ---- | --------------------------------- | ------- |
+| array     | T[]  | The array to be randomly selected | null    |
+
+## Pick
+
+`dunna.basic.pick(count, array)` returns a random subset of the given array with the given count
+
+```js
+dunna.basic.pick(3, [2, 1, 6, 3, 4]); // [6, 4, 1]
+dunna.basic.pick(2, ["Alice", "Bob", "Charlie"]); // ['Bob', 'Charlie']
+```
+
+| Parameter | Type   | Description                         | Default |
+| --------- | ------ | ----------------------------------- | ------- |
+| count     | number | The number of elements to be picked | null    |
+| array     | T[]    | The array to be randomly selected   | null    |
+
+## Omit
+
+`dunna.basic.omit(count, array)` returns a random subset of the given array by omitting elements based on the given count
+
+```js
+dunna.basic.omit(2, [2, 1, 6, 3, 4]); // [1, 6 ,4]
+dunna.basic.omit(2, ["Alice", "Bob", "Charlie"]); // ['Bob']
+```
+
+| Parameter | Type   | Description                          | Default |
+| --------- | ------ | ------------------------------------ | ------- |
+| count     | number | The number of elements to be omitted | null    |
+| array     | T[]    | The array to be randomly selected    | null    |

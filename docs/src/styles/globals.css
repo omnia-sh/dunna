@@ -1,3 +1,32 @@
+@import url("colors.css");
+
 .starlight-aside {
   border-radius: 0.25rem;
+}
+
+table {
+  width: 100%;
+  display: table !important;
+  border-collapse: collapse;
+}
+
+:is(td, th, tr) {
+  border: 1px solid;
+  border-color: var(--color-gray-300) !important;
+}
+
+html[data-theme="dark"] :is(td, th, tr) {
+  border-color: var(--color-gray-700) !important;
+}
+
+:is(th, td) {
+  padding-inline: 16px !important;
+}
+
+th {
+  background-color: var(--color-gray-100);
+}
+
+html[data-theme="dark"] :is(th) {
+  background-color: var(--color-gray-800);
 }
