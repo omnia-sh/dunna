@@ -1,0 +1,47 @@
+---
+title: Get started
+description: something
+---
+
+import { Steps, Tabs, TabItem, Code } from "@astrojs/starlight/components";
+
+export const usageCode = `
+const randomBoolean = dunna.basic.boolean();
+const randomInteger = dunna.basic.integer();
+`;
+
+<Steps>
+
+1. Install the package.
+
+   <Tabs>
+     <TabItem label="npm">
+       <Code code="npm install dunna" lang="bash" />
+     </TabItem>
+     <TabItem label="yarn">
+       <Code code="yarn add dunna" lang="bash" />
+     </TabItem>
+     <TabItem label="pnpm">
+       <Code code="pnpm add dunna" lang="bash" />
+     </TabItem>
+     <TabItem label="bun">
+       <Code code="bun add dunna" lang="bash" />
+     </TabItem>
+   </Tabs>
+
+2. Import the package.
+
+   <Tabs>
+     <TabItem label="ESM">
+       <Code code="import { dunna } from 'dunna'" lang="js" />
+     </TabItem>
+     <TabItem label="CommonJS">
+       <Code code="const dunna = require('dunna').default;" lang="js" />
+     </TabItem>
+   </Tabs>
+
+3. Use the package.
+
+   <Code code={usageCode} lang="js" />
+
+</Steps>
