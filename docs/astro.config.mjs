@@ -10,6 +10,8 @@ export default defineConfig({
         github: "https://github.com/alimehasin/dunna",
       },
 
+      customCss: ["./src/styles/globals.css"],
+
       expressiveCode: {
         styleOverrides: { borderRadius: "0.25rem" },
       },
