@@ -1,7 +1,5 @@
 import country from "./country";
 
-function countryName() {
+export default function countryName() {
   return country().name;
 }
-
-export default countryName;

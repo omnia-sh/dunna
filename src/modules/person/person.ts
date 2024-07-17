@@ -8,7 +8,7 @@ interface PersonParams {
   gender?: Gender | "any";
 }
 
-function person({ gender = "any", domain = "example.com" }: PersonParams = {}): Person {
+export default function person({ gender = "any", domain = "example.com" }: PersonParams = {}): Person {
   const booleanGender = gender === "any" ? genderFn() : gender;
   const firstName = firstNameFn({ gender: booleanGender });
   const lastName = lastNameFn();
@@ -21,5 +21,3 @@ function person({ gender = "any", domain = "example.com" }: PersonParams = {}): 
     email,
   };
 }
-
-export default person;

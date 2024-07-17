@@ -1,8 +1,6 @@
-import { basic } from "..";
 import { countries } from "../../database";
+import choice from "../basic/choice";
 
-function country() {
-  return basic.choice(countries);
+export default function country() {
+  return choice(countries);
 }
-
-export default country;

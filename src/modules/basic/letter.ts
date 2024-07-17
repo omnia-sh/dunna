@@ -5,7 +5,7 @@ interface LetterConfig {
   casing?: "upper" | "lower" | "any";
 }
 
-function letter({ casing = "any" }: LetterConfig = {}) {
+export default function letter({ casing = "any" }: LetterConfig = {}) {
   if (casing === "lower") {
     return letters.lower[integer({ max: 26 })];
   }
@@ -16,5 +16,3 @@ function letter({ casing = "any" }: LetterConfig = {}) {
 
   return letters.all[integer({ max: 26 * 2 })];
 }
-
-export default letter;

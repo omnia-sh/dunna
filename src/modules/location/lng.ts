@@ -1,7 +1,5 @@
 import city from "./city";
 
-function lng() {
+export default function lng() {
   return city().lng;
 }
-
-export default lng;

@@ -1,7 +1,5 @@
 import city from "./city";
 
-function cityName() {
+export default function cityName() {
   return city().name;
 }
-
-export default cityName;

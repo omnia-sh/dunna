@@ -1,8 +1,6 @@
 import colors from "../../database/color";
-import { choice } from "../basic";
+import choice from "../basic/choice";
 
-function colorName() {
+export default function colorName() {
   return choice(colors).name;
 }
-
-export default colorName;

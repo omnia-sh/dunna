@@ -5,4 +5,11 @@ import gender from "./gender";
 import lastName from "./last-name";
 import person from "./person";
 
-export { firstName, lastName, fullName, gender, email, person };
+export default {
+  firstName,
+  lastName,
+  fullName,
+  gender,
+  email,
+  person,
+};

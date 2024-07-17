@@ -6,8 +6,6 @@ interface NameParams {
   gender?: Gender | "any";
 }
 
-function name({ gender }: NameParams = {}) {
+export default function name({ gender }: NameParams = {}) {
   return `${firstName({ gender })} ${lastName()}`;
 }
-
-export default name;

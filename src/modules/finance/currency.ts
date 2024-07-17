@@ -1,8 +1,6 @@
 import { currencies } from "../../database";
-import { choice } from "../basic";
+import choice from "../basic/choice";
 
-function currency() {
+export default function currency() {
   return choice(currencies);
 }
-
-export default currency;

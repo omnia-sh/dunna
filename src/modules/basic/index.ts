@@ -6,4 +6,12 @@ import letter from "./letter";
 import omit from "./omit";
 import pick from "./pick";
 
-export { boolean, integer, float, letter, choice, pick, omit };
+export default {
+  boolean,
+  integer,
+  float,
+  letter,
+  choice,
+  pick,
+  omit,
+};

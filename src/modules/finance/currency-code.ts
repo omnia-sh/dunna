@@ -1,7 +1,5 @@
 import currency from "./currency";
 
-function currencyCode() {
+export default function currencyCode() {
   return currency().code;
 }
-
-export default currencyCode;

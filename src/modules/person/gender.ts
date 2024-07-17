@@ -1,8 +1,6 @@
 import type { Gender } from "../../types";
-import { choice } from "../basic";
+import choice from "../basic/choice";
 
-function gender(): Gender {
+export default function gender(): Gender {
   return choice(["male", "female"]);
 }
-
-export default gender;

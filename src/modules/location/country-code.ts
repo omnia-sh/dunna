@@ -1,7 +1,5 @@
 import country from "./country";
 
-function countryCode() {
+export default function countryCode() {
   return country().ISO2;
 }
-
-export default countryCode;

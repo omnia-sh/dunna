@@ -7,11 +7,9 @@ interface EmailParams {
   gender?: Gender | "any";
 }
 
-function email({ domain = "example.com", gender = "any" }: EmailParams = {}) {
+export default function email({ domain = "example.com", gender = "any" }: EmailParams = {}) {
   const firstName = firstNameFn({ gender });
   const lastName = lastNameFn();
 
   return `${firstName.toLowerCase()}_${lastName.toLowerCase()}@${domain}`;
 }
-
-export default email;

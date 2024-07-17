@@ -1,8 +1,6 @@
 import { lastNames } from "../../database";
-import { choice } from "../basic";
+import choice from "../basic/choice";
 
-function lastName(): string {
+export default function lastName(): string {
   return choice(lastNames);
 }
-
-export default lastName;

@@ -1,12 +1,12 @@
 import { femaleFirstNames, maleFirstNames } from "../../database";
 import type { Gender } from "../../types";
-import { choice } from "../basic";
+import choice from "../basic/choice";
 
 interface FirstNameParams {
   gender?: Gender | "any";
 }
 
-function firstName({ gender = "any" }: FirstNameParams = {}): string {
+export default function firstName({ gender = "any" }: FirstNameParams = {}): string {
   if (gender === "male") {
     return choice(maleFirstNames);
   }
@@ -17,5 +17,3 @@ function firstName({ gender = "any" }: FirstNameParams = {}): string {
 
   return choice(choice([maleFirstNames, femaleFirstNames]));
 }
-
-export default firstName;

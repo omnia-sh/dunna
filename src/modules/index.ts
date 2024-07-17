@@ -1,7 +1,13 @@
-import * as basic from "./basic";
-import * as color from "./color";
-import * as finance from "./finance";
-import * as location from "./location";
-import * as person from "./person";
+import basic from "./basic";
+import color from "./color";
+import finance from "./finance";
+import location from "./location";
+import person from "./person";
 
-export { basic, location, finance, person, color };
+export default {
+  basic,
+  location,
+  finance,
+  person,
+  color,
+};

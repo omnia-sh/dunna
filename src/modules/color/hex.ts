@@ -1,8 +1,6 @@
 import colors from "../../database/color";
-import { choice } from "../basic";
+import choice from "../basic/choice";
 
-function hex() {
+export default function hex() {
   return choice(colors).hex;
 }
-
-export default hex;

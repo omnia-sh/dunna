@@ -1,3 +1,3 @@
-import * as dunna from "./modules";
+import dunna from "./modules";
 
 export default dunna;
