@@ -6,5 +6,4 @@ export default defineConfig({
   dts: true,
   sourcemap: true,
   clean: true,
-  cjsInterop: true,
 });

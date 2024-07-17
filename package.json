@@ -9,6 +9,12 @@
   "types": "dist/index.d.ts",
   "files": ["dist"],
   "keywords": ["random", "fake", "data", "typescript"],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alimehasin/dunna.git"
