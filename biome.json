@@ -6,7 +6,7 @@
 
   "files": {
     "maxSize": 3000000,
-    "ignore": ["node_modules", "dist"]
+    "ignore": ["node_modules", "dist", "docs/.astro/**"]
   },
 
   "linter": {

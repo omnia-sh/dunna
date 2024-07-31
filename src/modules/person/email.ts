@@ -1,4 +1,6 @@
 import type { Gender } from "../../types";
+import choice from "../basic/choice";
+import integer from "../basic/integer";
 import firstNameFn from "./first-name";
 import lastNameFn from "./last-name";
 
@@ -7,9 +9,15 @@ interface EmailParams {
   gender?: Gender | "any";
 }
 
-export default function email({ domain = "example.com", gender = "any" }: EmailParams = {}) {
+export default function email({ domain, gender = "any" }: EmailParams = {}) {
   const firstName = firstNameFn({ gender });
   const lastName = lastNameFn();
 
-  return `${firstName.toLowerCase()}_${lastName.toLowerCase()}@${domain}`;
+  const domains = ["gmail.com", "hotmail.com", "yahoo.com", "outlook.com", "example.com"];
+  const chosenDomain = domain || choice(domains);
+
+  const firstPart = `${firstName.toLowerCase()}.${lastName.toLowerCase()}`;
+  const secondPart = integer({ min: 1000, max: 9999 });
+
+  return `${firstPart}${secondPart}@${chosenDomain}`;
 }

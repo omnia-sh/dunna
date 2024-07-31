@@ -19,30 +19,22 @@ yarn add dunna
 ### Import dunna
 
 ```js
-// ES6
-
-import dunna from 'dunna';
-```
-
-```js
-// Commonjs
-
-const dunna = require('dunna').default;
+import dunna from "dunna";
 ```
 
 ### Calling dunna functions
 
 ```js
-import dunna from 'dunna';
+import dunna from "dunna";
 
 // Get a random integer
-dunna.integer();
+dunna.basic.integer();
 
 // Get a random female name
-dunna.firstName({ gender: 'female' });
+dunna.person.firstName({ gender: "female" });
 
 // Get a random city name
-dunna.cityName();
+dunna.location.cityName();
 ```
 
 ### Support
