@@ -19,13 +19,13 @@ yarn add dunna
 ### Import dunna
 
 ```js
-import dunna from "dunna";
+import { dunna } from "dunna";
 ```
 
 ### Calling dunna functions
 
 ```js
-import dunna from "dunna";
+import { dunna } from "dunna";
 
 // Get a random integer
 dunna.basic.integer();
