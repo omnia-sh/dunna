@@ -20,7 +20,8 @@
     "check": "biome check --write",
     "typecheck": "tsc --noEmit",
     "size": "size-limit",
-    "prepare": "husky"
+    "prepare": "husky",
+    "docs": "cd docs && bun run dev"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
