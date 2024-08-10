@@ -22,7 +22,9 @@
     "typecheck": "tsc --noEmit",
     "size": "size-limit",
     "prepare": "husky",
-    "docs": "cd docs && bun run dev"
+    "docs:dev": "cd docs && bun run dev",
+    "docs:build": "cd docs && bun run build",
+    "docs:clean": "cd docs && bun run clean"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
