@@ -8,6 +8,7 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": ["dist"],
+  "packageManager": "bun@1.1.22",
   "keywords": ["random", "fake", "data", "typescript"],
   "repository": {
     "type": "git",
