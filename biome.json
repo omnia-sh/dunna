@@ -13,6 +13,9 @@
     "enabled": true,
     "rules": {
       "recommended": true,
+      "style": {
+        "useBlockStatements": "warn"
+      },
       "correctness": {
         "noUnusedImports": "warn",
         "noUnusedVariables": "warn"
