@@ -238,10 +238,6 @@ const currencies: Currency[] = [
     code: "IDR",
   },
   {
-    name: "New Israeli Sheqel",
-    code: "ILS",
-  },
-  {
     name: "Indian Rupee",
     code: "INR",
   },
