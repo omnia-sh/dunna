@@ -1,0 +1,86 @@
+---
+title: Person
+description: This the person module
+---
+
+import { Card } from "@astrojs/starlight/components";
+
+This is the person module, it contains firstName, lastName, gender,
+
+## Gender
+
+`dunna.person.gender()` returns a random gender male or female
+
+```js
+dunna.person.gender(); // male
+dunna.person.gender(); // female
+```
+
+## FirstName
+
+`dunna.person.firstName()` returns a random first name
+
+```js
+dunna.person.firstName(); // John
+dunna.person.firstName(); // Adam
+```
+
+| Parameter | Type   | Description        | Default |
+| --------- | ------ | ------------------ | ------- |
+| gender    | string | Specify the gender | any     |
+
+## LastName
+
+`dunna.person.lastName()` returns a random last name
+
+```js
+dunna.person.lastName(); // Smith
+dunna.person.lastName(); // Jones
+```
+
+## FullName
+
+`dunna.person.fullName()` returns a random full name
+
+```js
+dunna.person.fullName(); // John Smith
+dunna.person.fullName(); // Michael Williams
+```
+
+| Parameter | Type   | Description        | Default |
+| --------- | ------ | ------------------ | ------- |
+| gender    | string | Specify the gender | any     |
+
+## Email
+
+`dunna.person.email()` returns a random email
+
+```js
+dunna.person.email(); // john.smith4345@example.com
+dunna.person.email(); // michael.williams2853@gmail.com
+
+// Parameters
+dunna.person.email({ gender: "male" });
+dunna.person.email({ domain: "example.com" });
+```
+
+| Parameter | Type   | Description        | Default   |
+| --------- | ------ | ------------------ | --------- |
+| gender    | string | Specify the gender | any       |
+| domain    | string | Specify the domain | undefined |
+
+## Person
+
+`dunna.person.person()` returns a random person
+
+```js
+dunna.person.person();
+
+// Parameters
+dunna.person.person({ gender: "female" });
+```
+
+| Parameter | Type   | Description        | Default   |
+| --------- | ------ | ------------------ | --------- |
+| gender    | string | Specify the gender | any       |
+| domain    | string | Specify the domain | undefined |
