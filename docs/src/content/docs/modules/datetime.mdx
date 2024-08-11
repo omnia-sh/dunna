@@ -1,0 +1,47 @@
+---
+title: Datetime
+description: This is the datetime module
+---
+
+import { Card } from "@astrojs/starlight/components";
+
+This is a datetime module, it contains future, past, and near
+
+## Future
+
+`dunna.datetime.future()` returns a random future date
+
+```js
+dunna.datetime.future();
+```
+
+| Parameter      | Type   | Description                                       | Default |
+| -------------- | ------ | ------------------------------------------------- | ------- |
+| minFutureYears | string | Specify the maximum number of years in the future | 1       |
+| maxFutureYears | string | Specify the minimum number of years in the future | 10      |
+
+## Past
+
+`dunna.datetime.past()` returns a random past date
+
+```js
+dunna.datetime.past();
+```
+
+| Parameter    | Type   | Description                                     | Default |
+| ------------ | ------ | ----------------------------------------------- | ------- |
+| minPastYears | string | Specify the maximum number of years in the past | 1       |
+| maxPastYears | string | Specify the minimum number of years in the past | 10      |
+
+## Near
+
+`dunna.datetime.near()` returns a random date near the current date
+
+```js
+dunna.datetime.near();
+```
+
+| Parameter     | Type   | Description                                      | Default |
+| ------------- | ------ | ------------------------------------------------ | ------- |
+| minFutureDays | string | Specify the maximum number of days in the future | 1       |
+| maxFutureDays | string | Specify the minimum number of days in the future | 10      |
