@@ -5,7 +5,7 @@ interface PastConfig {
   maxPastYears?: number;
 }
 
-export default function past({ minPastYears = 0, maxPastYears = 10 }: PastConfig = {}): Date {
+export default function past({ minPastYears = 1, maxPastYears = 10 }: PastConfig = {}): Date {
   const daysInThePast = integer({
     min: minPastYears * 365,
     max: maxPastYears * 365,
