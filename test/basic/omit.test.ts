@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import dunna from "../../src";
+import { dunna } from "../../src";
 
 describe("Test dunna.basic.omit() function", () => {
   test("check if count elements are deleted from the array", () => {

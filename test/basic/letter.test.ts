@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import dunna from "../../src";
+import { dunna } from "../../src";
 import { letters } from "../../src/database";
 
 describe("Test dunna.basic.letter() function", () => {

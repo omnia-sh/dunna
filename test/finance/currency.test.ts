@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import dunna from "../../src";
+import { dunna } from "../../src";
 import { currencies } from "../../src/database";
 import currency from "../../src/modules/finance/currency";
 

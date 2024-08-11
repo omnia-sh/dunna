@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import dunna from "../../src";
+import { dunna } from "../../src";
 import { hexToRgb } from "../../src/utils";
 
 describe("Test dunna color module", () => {

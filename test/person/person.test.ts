@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import dunna from "../../src";
+import { dunna } from "../../src";
 import { femaleFirstNames, lastNames, maleFirstNames } from "../../src/database";
 
 describe("Test dunna person module", () => {

@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import dunna from "../../src";
+import { dunna } from "../../src";
 import { countries } from "../../src/database";
 import city from "../../src/modules/location/city";
 
