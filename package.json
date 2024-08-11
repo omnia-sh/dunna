@@ -24,7 +24,8 @@
     "prepare": "husky",
     "docs:dev": "cd docs && bun run dev",
     "docs:build": "cd docs && bun run build",
-    "docs:clean": "cd docs && bun run clean"
+    "docs:clean": "cd docs && bun run clean",
+    "release": "release-it"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
@@ -34,6 +35,7 @@
     "@types/bun": "latest",
     "husky": "^9.1.4",
     "lint-staged": "^15.2.8",
+    "release-it": "^17.6.0",
     "size-limit": "^11.1.4",
     "tsup": "^8.2.4",
     "typescript": "^5"
