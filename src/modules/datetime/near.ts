@@ -5,7 +5,7 @@ interface NearConfig {
   maxFutureDays?: number;
 }
 
-export default function near({ minFutureDays = 0, maxFutureDays = 10 }: NearConfig = {}): Date {
+export default function near({ minFutureDays = 1, maxFutureDays = 10 }: NearConfig = {}): Date {
   const daysInTheNear = integer({
     min: minFutureDays,
     max: maxFutureDays,

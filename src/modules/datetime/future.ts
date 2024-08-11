@@ -5,7 +5,7 @@ interface FutureConfig {
   maxFutureYears?: number;
 }
 
-export default function future({ minFutureYears = 0, maxFutureYears = 10 }: FutureConfig = {}): Date {
+export default function future({ minFutureYears = 1, maxFutureYears = 10 }: FutureConfig = {}): Date {
   const daysInTheFuture = integer({
     min: minFutureYears * 365,
     max: maxFutureYears * 365,
