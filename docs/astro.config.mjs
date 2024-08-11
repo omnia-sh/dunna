@@ -7,7 +7,7 @@ export default defineConfig({
       title: "Dunna",
       customCss: ["./src/styles/globals.css"],
       social: {
-        github: "https://github.com/alimehasin/dunna",
+        github: "https://github.com/omnia-sh/dunna",
       },
 
       expressiveCode: {
