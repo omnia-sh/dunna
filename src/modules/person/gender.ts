@@ -1,5 +1,5 @@
-import type { Gender } from "../../types";
-import choice from "../basic/choice";
+import choice from "@/modules/basic/choice";
+import type { Gender } from "@/types";
 
 export default function gender(): Gender {
   return choice(["male", "female"]);

@@ -1,7 +1,7 @@
 import { describe, expect, test } from "bun:test";
-import { dunna } from "../../src";
-import { currencies } from "../../src/database";
-import currency from "../../src/modules/finance/currency";
+import { currencies } from "@/database";
+import currency from "@/modules/finance/currency";
+import { dunna } from "dunna";
 
 describe("Test dunna.finance funnctions", () => {
   test("return a valid currency choice", () => {

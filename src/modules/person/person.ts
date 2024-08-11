@@ -1,4 +1,4 @@
-import type { Gender, Person } from "../../types";
+import type { Gender, Person } from "@/types";
 import firstNameFn from "./first-name";
 import genderFn from "./gender";
 import lastNameFn from "./last-name";

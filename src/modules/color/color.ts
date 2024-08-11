@@ -1,7 +1,7 @@
-import colors from "../../database/color";
-import type { Color } from "../../types";
-import { hexToRgb } from "../../utils";
-import choice from "../basic/choice";
+import colors from "@/database/color";
+import choice from "@/modules/basic/choice";
+import type { Color } from "@/types";
+import { hexToRgb } from "@/utils";
 
 export default function color(): Color {
   const color = choice(colors);

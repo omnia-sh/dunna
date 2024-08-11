@@ -1,7 +1,7 @@
 import { describe, expect, test } from "bun:test";
-import { dunna } from "../../src";
-import { countries } from "../../src/database";
-import country from "../../src/modules/location/country";
+import { countries } from "@/database";
+import country from "@/modules/location/country";
+import { dunna } from "dunna";
 
 describe("Test country functions", () => {
   test("return a valid country from the list", () => {

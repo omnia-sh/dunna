@@ -1,6 +1,6 @@
-import type { Gender } from "../../types";
-import choice from "../basic/choice";
-import integer from "../basic/integer";
+import choice from "@/modules/basic/choice";
+import integer from "@/modules/basic/integer";
+import type { Gender } from "@/types";
 import firstNameFn from "./first-name";
 import lastNameFn from "./last-name";
 

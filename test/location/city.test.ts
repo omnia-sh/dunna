@@ -1,7 +1,7 @@
 import { describe, expect, test } from "bun:test";
-import { dunna } from "../../src";
-import { countries } from "../../src/database";
-import city from "../../src/modules/location/city";
+import { countries } from "@/database";
+import city from "@/modules/location/city";
+import { dunna } from "dunna";
 
 describe("Test city functions", () => {
   test("returns a valid city", () => {

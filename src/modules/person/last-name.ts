@@ -1,5 +1,5 @@
-import { lastNames } from "../../database";
-import choice from "../basic/choice";
+import { lastNames } from "@/database";
+import choice from "@/modules/basic/choice";
 
 export default function lastName(): string {
   return choice(lastNames);

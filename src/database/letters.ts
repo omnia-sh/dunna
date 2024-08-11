@@ -1,4 +1,4 @@
-import type { Latters } from "../types";
+import type { Latters } from "@/types";
 
 const letters: Latters = {
   all: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",

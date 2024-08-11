@@ -1,6 +1,6 @@
-import { femaleFirstNames, maleFirstNames } from "../../database";
-import type { Gender } from "../../types";
-import choice from "../basic/choice";
+import { femaleFirstNames, maleFirstNames } from "@/database";
+import choice from "@/modules/basic/choice";
+import type { Gender } from "@/types";
 
 interface FirstNameParams {
   gender?: Gender | "any";

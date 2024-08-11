@@ -1,4 +1,4 @@
-import { letters } from "../../database";
+import { letters } from "@/database";
 import integer from "./integer";
 
 interface LetterConfig {

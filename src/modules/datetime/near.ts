@@ -1,4 +1,4 @@
-import integer from "../basic/integer";
+import integer from "@/modules/basic/integer";
 
 interface NearConfig {
   minFutureDays?: number;
