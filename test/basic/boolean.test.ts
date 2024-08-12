@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 
-import { dunna } from "dunna";
+import { dunna } from "@";
 
 describe("Test dunna.basic.boolean() function", () => {
   test("return a boolean", () => {

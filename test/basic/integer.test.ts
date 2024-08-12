@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { dunna } from "dunna";
+import { dunna } from "@";
 
 describe("Test dunna.basic.integer() function", () => {
   test("generate a random integer without floating point", () => {

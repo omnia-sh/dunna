@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
+import { dunna } from "@";
 import { letters } from "@/database";
-import { dunna } from "dunna";
 
 describe("Test dunna.basic.letter() function", () => {
   test("return a letter", () => {

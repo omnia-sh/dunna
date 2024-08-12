@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
+import { dunna } from "@";
 import { hexToRgb } from "@/utils";
-import { dunna } from "dunna";
 
 describe("Test dunna color module", () => {
   test("return a valid hex color", () => {

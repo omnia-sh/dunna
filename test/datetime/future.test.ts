@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { dunna } from "dunna";
+import { dunna } from "@";
 
 describe("Test dunna datetime module", () => {
   test("return a valid date in the future", () => {
