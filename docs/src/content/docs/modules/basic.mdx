@@ -11,7 +11,7 @@ This is a basic module, it contains integer, float, string, boolean, and date ty
 
 `dunna.basic.boolean()` returns a random boolean value.
 
-```js
+```ts
 // Use default likelihood = 50
 dunna.basic.boolean(); // true
 dunna.basic.boolean(); // false
@@ -30,7 +30,7 @@ dunna.basic.boolean({ likelihood: 20 }); // The output has chance of 20% to be t
 
 `dunna.basic.integer()` returns a random integer between 0 (not inclusive) and 10 (inclusive)
 
-```js
+```ts
 dunna.basic.integer(); // 4
 dunna.basic.integer(); // 7
 dunna.basic.integer(); // 4
@@ -49,7 +49,7 @@ dunna.integer({ min: -10, max: 10 });
 
 `dunna.basic.float()` returns a random float number between 0 (inclusive) and 10 (not inclusive)
 
-```js
+```ts
 dunna.basic.float(); // 4.364
 dunna.basic.float(); // 8.834
 
@@ -67,7 +67,7 @@ dunna.float({ min: 3, max: 36, fixed: 5 });
 
 `dunna.basic.letter()` returns a random uppercase or lowercase letter
 
-```js
+```ts
 dunna.basic.letter(); // h
 dunna.basic.letter(); // E
 
@@ -83,7 +83,7 @@ dunna.basic.letter({ casing: "upper" });
 
 `dunna.basic.choice(array)` returns a random element from an array
 
-```js
+```ts
 dunna.basic.choice(["Alice", "Bob", "Charlie"]); // Alice
 dunna.basic.choice(["Alice", "Bob", "Charlie"]); // Charlie
 ```
@@ -96,7 +96,7 @@ dunna.basic.choice(["Alice", "Bob", "Charlie"]); // Charlie
 
 `dunna.basic.pick(count, array)` returns a random subset of the given array with the given count
 
-```js
+```ts
 dunna.basic.pick(3, [2, 1, 6, 3, 4]); // [6, 4, 1]
 dunna.basic.pick(2, ["Alice", "Bob", "Charlie"]); // ['Bob', 'Charlie']
 ```
@@ -110,7 +110,7 @@ dunna.basic.pick(2, ["Alice", "Bob", "Charlie"]); // ['Bob', 'Charlie']
 
 `dunna.basic.omit(count, array)` returns a random subset of the given array by omitting elements based on the given count
 
-```js
+```ts
 dunna.basic.omit(2, [2, 1, 6, 3, 4]); // [1, 6 ,4]
 dunna.basic.omit(2, ["Alice", "Bob", "Charlie"]); // ['Bob']
 ```

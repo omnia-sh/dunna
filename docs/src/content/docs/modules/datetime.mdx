@@ -11,7 +11,7 @@ This is a datetime module, it contains future, past, and near
 
 `dunna.datetime.future()` returns a random future date
 
-```js
+```ts
 dunna.datetime.future();
 ```
 
@@ -24,7 +24,7 @@ dunna.datetime.future();
 
 `dunna.datetime.past()` returns a random past date
 
-```js
+```ts
 dunna.datetime.past();
 ```
 
@@ -37,7 +37,7 @@ dunna.datetime.past();
 
 `dunna.datetime.near()` returns a random date near the current date
 
-```js
+```ts
 dunna.datetime.near();
 ```
 
@@ -45,3 +45,19 @@ dunna.datetime.near();
 | ------------- | ------ | ------------------------------------------------ | ------- |
 | minFutureDays | string | Specify the maximum number of days in the future | 1       |
 | maxFutureDays | string | Specify the minimum number of days in the future | 10      |
+
+## Between
+
+`dunna.datetime.between()` returns a random date between the two dates
+
+```ts
+dunna.datetime.between({
+  min: new Date(),
+  max: new Date(),
+});
+```
+
+| Parameter | Type   | Description              | Default |
+| --------- | ------ | ------------------------ | ------- |
+| min       | string | Specify the minimum date | -       |
+| max       | string | Specify the maximum date | -       |
